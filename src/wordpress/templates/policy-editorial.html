@@ -321,6 +321,14 @@ function updateShortcutState(){
     const active=(kind==='topic'&&els.topic.value===value)||(kind==='type'&&els.type.value===value);btn.classList.toggle('is-active',active);btn.setAttribute('aria-pressed',String(active));
   });
 }
+function splitPolicyTitle(rawTitle){
+  const full=String(rawTitle||'').trim();
+  // Standard separator, plus colon separators used with a numbered policy authority.
+  // Avoid mistaking a descriptive headline's colon for a document identifier.
+  const match=full.match(/^(.+?)\s+[—–]\s+(.+)$/) ||
+    full.match(/^((?:SB|AB|TEGL|TEN|ACL|ACWDL|WSDD?|WSIN|WIAD|WED|GENERAL|EO|OA Circular|P\.L\.)[\w .,\-]*\d)\s*:\s+(.+)$/i);
+  return match?{identifier:match[1].trim(),title:match[2].trim()}:{identifier:'',title:full};
+}
 function render(){
   const q=norm(els.q.value),type=els.type.value,topic=els.topic.value,year=els.year.value,sort=els.sort.value;
   filtered=POSTS.filter(p=>{
@@ -334,9 +342,8 @@ function render(){
   els.count.textContent=filtered.length===1?'1 published brief':filtered.length+' published briefs';
   const visible=filtered.slice(0,shown);
   els.results.innerHTML=visible.length?visible.map(p=>{
-    // The identifier is the existing title prefix, never a manufactured policy ID.
-    const parts=p.title.split(' — '),identifier=parts.length>1?parts.shift():'';
-    const title=parts.join(' — ')||p.title;
+    // Keep identifiers in the ID / date column even when the source title uses a colon.
+    const {identifier,title}=splitPolicyTitle(p.title);
     const topicBadges=topics(p).map(t=>'<span class="ww-card-badge">'+esc(t.name)+'</span>').join('');
     const types=cats(p).filter(c=>DOC_TYPES.includes(c.slug)).map(c=>esc(c.name)).join(' · ');
     return '<article class="ww-policy-card" tabindex="-1" data-brief-id="'+p.id+'"><div class="ww-card-meta">'+(identifier?'<span class="ww-card-id">'+esc(identifier)+'</span>':'')+'<time class="ww-card-date" datetime="'+esc(p.date)+'">'+esc(fmtDate(p.date))+'</time></div><div class="ww-card-title"><h3><a href="'+esc(p.link)+'">'+esc(title)+'</a></h3><p class="ww-card-type">'+types+'</p></div><div class="ww-card-topics">'+(topicBadges?'<span class="ww-mobile-label">Topics</span>'+topicBadges:'')+'</div><div class="ww-card-source"><a href="'+esc(p.officialSource)+'" target="_blank" rel="noopener noreferrer" aria-label="'+esc((p.sourceLabel||'Official source')+' for '+p.title+' (opens in a new tab)')+'">'+esc(p.sourceLabel||'Official source ↗')+'</a></div><div class="ww-card-action"><a class="ww-read-link" href="'+esc(p.link)+'" aria-label="'+esc('Read brief: '+p.title)+'">Read brief →</a></div></article>';
