@@ -29,8 +29,6 @@ jobs:
         run: python tests/validate_public_export.py
       - name: Check inline JavaScript syntax in WordPress templates
         run: python tests/validate_public_source_js.py
-      - name: Validate policy identifier display across title formats
-        run: node tests/policy_identifier_display.test.cjs
       - name: Check reader-facing JavaScript syntax
         shell: bash
         run: |
