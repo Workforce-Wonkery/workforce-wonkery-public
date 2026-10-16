@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
       - name: Install Pa11y CI
@@ -34,7 +34,7 @@ jobs:
         run: node tests/accessibility/summarize-audit.mjs artifacts/accessibility/live-audit.json >> "$GITHUB_STEP_SUMMARY"
       - name: Upload evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: public-accessibility-audit
           path: artifacts/accessibility/live-audit.json

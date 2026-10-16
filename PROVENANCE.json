@@ -1018,27 +1018,27 @@
       "target": "docs/methodology/editorial-standard-feature-briefs.md"
     },
     {
-      "sha256": "25eb5ca83979877b5af06c3cb349ad285c7a6b2bc027cd4a7fa62f5dbf86d864",
+      "sha256": "132d4e4fe02d33fabf01d4352c1ea806c21762b5658b96ca2c9619c7afdde453",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
       "target": ".github/workflows/public-ci.yml"
     },
     {
-      "sha256": "959691885a5e6c193c025768ab72cd3e9a4122ebbe0b712f3c4fe290cdda7611",
+      "sha256": "4e774ecef920ebb117fee8f58dcd1fb05ac12d7d5946d6e1a9d73126997e4c1f",
       "source": "public-companion/templates/.github/workflows/live-browser-acceptance.yml",
       "target": ".github/workflows/live-browser-acceptance.yml"
     },
     {
-      "sha256": "deec6762ad999c3d947f7c6d6798f30fd98213d2c6e2964f8b9780e0377ab38a",
+      "sha256": "01941602279b761e63beb5036f17544d813ce868502b0485438520b0d2ef1568",
       "source": "public-companion/templates/.github/workflows/site-structure-check.yml",
       "target": ".github/workflows/site-structure-check.yml"
     },
     {
-      "sha256": "806f75844ebbc9729b434808f380bfa584288d4767465199fd3d132ae8cfb843",
+      "sha256": "765c4c72a97b01e2ce3c40336fe244273d7b5516ac4069f6f96d7bee550ab701",
       "source": "public-companion/templates/.github/workflows/discovery-acceptance.yml",
       "target": ".github/workflows/discovery-acceptance.yml"
     },
     {
-      "sha256": "b3eb4b707e1899391a43b829a8e39a0fab79997e0c18cbe282fbce1895bfb646",
+      "sha256": "f2140c72677efe521569ce4fcd22045b960a4ba56700fec6d014e566821f55ea",
       "source": "public-companion/templates/.github/workflows/promote-private-sync.yml",
       "target": ".github/workflows/promote-private-sync.yml"
     },
@@ -1083,12 +1083,12 @@
       "target": "tests/validate_public_source_js.py"
     },
     {
-      "sha256": "8a34445bf50b9f08fe960a6a4786a1ae8918e3e3930744dc5ae0263b824ce4c4",
+      "sha256": "434113fdbe6c327f04ab3e86c1500bc8ebb5113fe1d46122de4061d8e76c16d0",
       "source": "public-companion/templates/.github/workflows/accessibility-audit.yml",
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "f1e01e1929a27e47760b438c626960ec7caba615",
+  "source_commit": "873f6c1366c17a0ec191cb07202e5c624d29bbd6",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
