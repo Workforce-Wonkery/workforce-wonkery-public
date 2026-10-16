@@ -502,7 +502,8 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
   function addTocAndActions(){
     const root=mainRoot(); if(!root)return;
     const h1=root.querySelector('h1'); const hs=[...root.querySelectorAll('h2,h3')].filter(h=>h.offsetParent!==null);
-    if(document.body.classList.contains('home')||!h1||hs.length<4||root.scrollHeight<1700)return;
+    // Policy posts carry their own Memo/Citation/Print bar; keep them free of the injected tools once their title is an H1.
+    if(document.body.classList.contains('home')||document.body.classList.contains('single-post')||!h1||hs.length<4||root.scrollHeight<1700)return;
     hs.forEach((h,i)=>{if(!h.id)h.id='section-'+(i+1)+'-'+h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,42)});
     const toc=document.createElement('details');toc.className='ww-mobile-toc';
      const tocSummary=document.createElement('summary');tocSummary.textContent='On this page';
