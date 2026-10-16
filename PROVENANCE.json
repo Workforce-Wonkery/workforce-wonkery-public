@@ -58,7 +58,7 @@
       "target": "data/runtime/discovery/shards/sector.json"
     },
     {
-      "sha256": "4b166be08e14dcf578b5a80da837050d9c48f80cbaf6863d7dc52529c9b25922",
+      "sha256": "bb529381aad570e036848535e89a7037f0a74d8a5b5f67258de38cd3e8b50bab",
       "source": "generated/public/discovery/shards/site.json",
       "target": "data/runtime/discovery/shards/site.json"
     },
@@ -198,7 +198,7 @@
       "target": "data/runtime/intelligence-graph/entities/organization_type.json"
     },
     {
-      "sha256": "4421e0c88676b0557167ec6da66d3590cd07f8027c61351712d448813fc19c12",
+      "sha256": "6c67e125b51fa759051e47fbbfb8a8b62dfc9b2dbc6dab6ef22432063e159422",
       "source": "generated/public/intelligence-graph/entities/page.json",
       "target": "data/runtime/intelligence-graph/entities/page.json"
     },
@@ -243,7 +243,7 @@
       "target": "data/runtime/intelligence-graph/impact-index.json"
     },
     {
-      "sha256": "6f7bdedc88d19f6c5f8a5d29155cf2a2a1dc9f593c0a2997020af36ce79c6207",
+      "sha256": "3ef0fd62877e59203e1aeb4f80915d03da10c9d550dd7f61a9c37531161c1a72",
       "source": "generated/public/intelligence-graph/manifest.json",
       "target": "data/runtime/intelligence-graph/manifest.json"
     },
@@ -538,7 +538,7 @@
       "target": "data/runtime/labor-market-profiles/markets/49700.json"
     },
     {
-      "sha256": "b213ecaa548e076059fff611113205edbd40769066bac68ddc3b83836f4b82c6",
+      "sha256": "ee1585b0d883ca77ea86c8067e2163edaeeb5b924c01e166607a74b7dfa5289b",
       "source": "generated/public/manifest.json",
       "target": "data/runtime/manifest.json"
     },
@@ -1088,7 +1088,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "2c9bd8cc732a277caab046f035e4e202f9cedb13",
+  "source_commit": "f1e01e1929a27e47760b438c626960ec7caba615",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
