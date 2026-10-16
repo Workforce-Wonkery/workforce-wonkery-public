@@ -1,7 +1,395 @@
 {
   "schema_version": "1.0",
-  "count": 234,
+  "count": 249,
   "records": [
+    {
+      "id": 7705,
+      "title": "GENERAL-26-64 — Workforce Pell FAQs Turn Federal Rules Into Implementation Decisions",
+      "date": "2026-10-15",
+      "link": "https://workforcewonkery.com/2026/10/15/general-26-64-workforce-pell-implementation-faqs/",
+      "categories": [
+        {
+          "slug": "federal-rules-notices",
+          "name": "Federal Rules & Notices"
+        },
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        }
+      ],
+      "official_source": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-10-15/availability-workforce-pell-regulations-frequently-asked-questions",
+      "search": "general-26-64 — workforce pell faqs turn federal rules into implementation decisions 2026-10-15 federal rules & notices federal-rules-notices workforce education & training policy workforce-education-training-policy training & education training-education"
+    },
+    {
+      "id": 7697,
+      "title": "SB 1030: CalWORKs Will Retire a Household Contribution Rule",
+      "date": "2026-10-13",
+      "link": "https://workforcewonkery.com/2026/10/13/sb-1030-calworks-family-eligibility/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        },
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1030",
+      "search": "sb 1030: calworks will retire a household contribution rule 2026-10-13 california legislation california-legislation cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits eligibility & priority of service eligibility-priority-of-service civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7696,
+      "title": "SB 1012: Fire Camp Experience Counts Toward Apprenticeships",
+      "date": "2026-10-13",
+      "link": "https://workforcewonkery.com/2026/10/13/sb-1012-conservation-camps-construction-apprenticeships/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        },
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "apprenticeship",
+          "name": "Apprenticeship"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1012",
+      "search": "sb 1012: fire camp experience counts toward apprenticeships 2026-10-13 california legislation california-legislation workforce education & training policy workforce-education-training-policy apprenticeship apprenticeship training & education training-education civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7695,
+      "title": "TEGL 10-23, Change 3: What Rescission Means for Access",
+      "date": "2026-10-13",
+      "link": "https://workforcewonkery.com/2026/10/13/tegl-10-23-change-3-workforce-center-access/",
+      "categories": [
+        {
+          "slug": "civil-rights-accessibility-policy",
+          "name": "Civil Rights & Accessibility Policy"
+        },
+        {
+          "slug": "usdol-tegls",
+          "name": "USDOL TEGLs"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "immigration-work-authorization",
+          "name": "Immigration & Work Authorization"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        },
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        },
+        {
+          "slug": "wioa",
+          "name": "WIOA"
+        }
+      ],
+      "official_source": "https://www.dol.gov/agencies/eta/advisories/tegl-10-23-change-3",
+      "search": "tegl 10-23, change 3: what rescission means for access 2026-10-13 civil rights & accessibility policy civil-rights-accessibility-policy usdol tegls usdol-tegls immigration & work authorization immigration-work-authorization eligibility & priority of service eligibility-priority-of-service ajcc & service delivery ajcc-service-delivery wioa wioa"
+    },
+    {
+      "id": 7661,
+      "title": "ACL 26-28: CalWORKs Changes When and How Sanctions Apply",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-28-calworks-noncompliance-sanction-reform/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-28.pdf?ver=1CfKDhWd34Y7GzNGnlmsiw%3D%3D",
+      "search": "acl 26-28: calworks changes when and how sanctions apply 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits eligibility & priority of service eligibility-priority-of-service civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7660,
+      "title": "ACL 26-31: Transportation Comes Before CalWORKs Participation",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-31-calworks-transportation-advance-payments/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-31.pdf?ver=u0m1HpYhHDUKJ_B307_1yQ%3D%3D",
+      "search": "acl 26-31: transportation comes before calworks participation 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits ajcc & service delivery ajcc-service-delivery"
+    },
+    {
+      "id": 7659,
+      "title": "ACL 26-32: CalWORKs Makes Job Search a Choice, Not the Default",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-32-calworks-job-search-participant-choice/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-32.pdf?ver=o8QeyZI2jUeAk59Lvbpr2A%3D%3D",
+      "search": "acl 26-32: calworks makes job search a choice, not the default 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits ajcc & service delivery ajcc-service-delivery"
+    },
+    {
+      "id": 7654,
+      "title": "ACL 26-63 — Seven Counties Have CalFresh Time-Limit Waivers for 2026–27",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-63-seven-counties-calfresh-abawd-waiver-2026-27/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-63.pdf?ver=p4_TPQopvPhvWupK0k9skw%3D%3D",
+      "search": "acl 26-63 — seven counties have calfresh time-limit waivers for 2026–27 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits eligibility & priority of service eligibility-priority-of-service"
+    },
+    {
+      "id": 7653,
+      "title": "ACL 26-59 — CalFresh Opens an Optional County Workfare Path",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-59-calfresh-comparable-workfare-county-option/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-59.pdf?ver=R2cugy2rn_nE3DnBq3f82g%3D%3D",
+      "search": "acl 26-59 — calfresh opens an optional county workfare path 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits employer services & work-based learning employer-services-work-based-learning eligibility & priority of service eligibility-priority-of-service"
+    },
+    {
+      "id": 7652,
+      "title": "ACWDL 26-18 — Medi-Cal Prepares Electronic Work-Hour Checks for 2027",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acwdl-26-18-medi-cal-equifax-truv-work-hour-verification/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        },
+        {
+          "slug": "caljobs-data-systems",
+          "name": "CalJOBS & Data Systems"
+        }
+      ],
+      "official_source": "https://www.dhcs.ca.gov/file/acwdl-26-18-pdf/",
+      "search": "acwdl 26-18 — medi-cal prepares electronic work-hour checks for 2027 2026-10-12 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits eligibility & priority of service eligibility-priority-of-service caljobs & data systems caljobs-data-systems"
+    },
+    {
+      "id": 7651,
+      "title": "ACL 26-27 — CalFresh E&T Expands Reporting on Skills, Credentials, and Equity",
+      "date": "2026-10-12",
+      "link": "https://workforcewonkery.com/2026/10/12/acl-26-27-calfresh-et-reporting-skills-credentials-equity/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        },
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        },
+        {
+          "slug": "performance-accountability",
+          "name": "Performance & Accountability"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-27.pdf?ver=__jxxNO57L1qTwFkJpThIw%3D%3D",
+      "search": "acl 26-27 — calfresh e&t expands reporting on skills, credentials, and equity 2026-10-12 cross-system workforce policy cross-system-workforce-policy workforce education & training policy workforce-education-training-policy training & education training-education supportive services & public benefits supportive-services-public-benefits civil rights, equity & accessibility civil-rights-equity-accessibility performance & accountability performance-accountability"
+    },
+    {
+      "id": 7565,
+      "title": "WSIN26-20 — California Opens $17 Million for Employment and Training Pathways",
+      "date": "2026-10-09",
+      "link": "https://workforcewonkery.com/2026/10/09/wsin26-20-employment-and-training-pathways-py-2026-27/",
+      "categories": [
+        {
+          "slug": "edd-information-notices",
+          "name": "EDD Information Notices"
+        },
+        {
+          "slug": "funding-grant-notices",
+          "name": "Funding & Grant Notices"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "funding-grants",
+          "name": "Funding & Grants"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        }
+      ],
+      "official_source": "https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-20/",
+      "search": "wsin26-20 — california opens $17 million for employment and training pathways 2026-10-09 edd information notices edd-information-notices funding & grant notices funding-grant-notices funding & grants funding-grants training & education training-education eligibility & priority of service eligibility-priority-of-service sector & industry initiatives sector-industry-initiatives"
+    },
+    {
+      "id": 7524,
+      "title": "WSIN26-19 — California Puts $8.5 Million Behind EMS Workforce Pathways, but the Competition Is Limited",
+      "date": "2026-10-07",
+      "link": "https://workforcewonkery.com/2026/10/07/wsin26-19-ems-program-py-26-27-limited-competition/",
+      "categories": [
+        {
+          "slug": "edd-information-notices",
+          "name": "EDD Information Notices"
+        },
+        {
+          "slug": "funding-grant-notices",
+          "name": "Funding & Grant Notices"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "funding-grants",
+          "name": "Funding & Grants"
+        },
+        {
+          "slug": "wioa",
+          "name": "WIOA"
+        }
+      ],
+      "official_source": "https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-19/",
+      "search": "wsin26-19 — california puts $8.5 million behind ems workforce pathways, but the competition is limited 2026-10-07 edd information notices edd-information-notices funding & grant notices funding-grant-notices sector & industry initiatives sector-industry-initiatives training & education training-education funding & grants funding-grants wioa wioa"
+    },
     {
       "id": 7233,
       "title": "SB 1159 — California Draws a Line Between Human Public Participation and Autonomous AI",
@@ -2047,6 +2435,30 @@
       "search": "wsd25-05 — ajcc comprehensive and affiliate/specialized certification 2026-06-19 edd directives edd-directives planning & governance planning-governance ajcc & service delivery ajcc-service-delivery wioa wioa"
     },
     {
+      "id": 7707,
+      "title": "ACL 26-43 — California Uses Administrative Data to Recognize CalFresh Work Exemptions",
+      "date": "2026-06-18",
+      "link": "https://workforcewonkery.com/2026/06/18/acl-26-43-calfresh-automated-work-exemption-data/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-43.pdf",
+      "search": "acl 26-43 — california uses administrative data to recognize calfresh work exemptions 2026-06-18 cross-system workforce policy cross-system-workforce-policy supportive services & public benefits supportive-services-public-benefits eligibility & priority of service eligibility-priority-of-service"
+    },
+    {
       "id": 79,
       "title": "WSIN25-38 — PY 2024 Performance Scores",
       "date": "2026-06-17",
@@ -2713,6 +3125,38 @@
       ],
       "official_source": "https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin25-26/",
       "search": "wsin25-26 — indian and native american programs employment and training grants — grant opportunity 2026-04-14 edd information notices edd-information-notices funding & grant notices funding-grant-notices funding & grants funding-grants training & education training-education wioa wioa"
+    },
+    {
+      "id": 7706,
+      "title": "ACL 26-25 — California Expands the CalFresh College Student Exemption",
+      "date": "2026-04-13",
+      "link": "https://workforcewonkery.com/2026/04/13/acl-26-25-calfresh-undergraduate-degree-student-exemption/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        },
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "eligibility-priority-of-service",
+          "name": "Eligibility & Priority of Service"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2026/26-25.pdf",
+      "search": "acl 26-25 — california expands the calfresh college student exemption 2026-04-13 cross-system workforce policy cross-system-workforce-policy workforce education & training policy workforce-education-training-policy supportive services & public benefits supportive-services-public-benefits training & education training-education eligibility & priority of service eligibility-priority-of-service"
     },
     {
       "id": 92,

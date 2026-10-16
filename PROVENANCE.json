@@ -23,7 +23,7 @@
       "target": "LICENSE-NOTICE.md"
     },
     {
-      "sha256": "7efb2d95abc06898e31eb7ec342f0f2d17aec3cb64f3e5da3a146e520aa43d4e",
+      "sha256": "941b58b41b4d726b761209615bd8d59d7476588b6365b2d21cc2de5f2d0326fb",
       "source": "generated/public/discovery/manifest.json",
       "target": "data/runtime/discovery/manifest.json"
     },
@@ -38,17 +38,17 @@
       "target": "data/runtime/discovery/shards/occupation-31-59.json"
     },
     {
-      "sha256": "c5bdb65230bc5dac28504793f1042ab036ae21d855135a2f1a57d8521c8cd0c1",
+      "sha256": "160cc3faead8eb281678dbe9392c9a6003803333d7bb8be0fbc83330f63b13eb",
       "source": "generated/public/discovery/shards/policy.json",
       "target": "data/runtime/discovery/shards/policy.json"
     },
     {
-      "sha256": "92d9835b60fc34a918b4e9c746add3cf5388c882833bdb5008795ab9097bd02e",
+      "sha256": "2f98bf18c76fd09fd0a7072f0db4834fa8c82aa09715a13374597c528e697411",
       "source": "generated/public/discovery/shards/practice.json",
       "target": "data/runtime/discovery/shards/practice.json"
     },
     {
-      "sha256": "f6c1ab4324e4a6c4b4569cf9c5d3fef5edbabdcde7933ac0a0ab8b3e3e6a0d61",
+      "sha256": "7234e0d68a628e1bca98227dafcf3e5a7927363042625c9fbe06c926441c6c67",
       "source": "generated/public/discovery/shards/regional.json",
       "target": "data/runtime/discovery/shards/regional.json"
     },
@@ -58,92 +58,92 @@
       "target": "data/runtime/discovery/shards/sector.json"
     },
     {
-      "sha256": "740ad77635a8d41cc4122059b20cfad92fcb605dfd6351fa495d6109b4721f85",
+      "sha256": "0715bc2fbd4c8e50090fae2eefdca65875b1c8d73eec4cfda655807fd248db40",
       "source": "generated/public/discovery/shards/site.json",
       "target": "data/runtime/discovery/shards/site.json"
     },
     {
-      "sha256": "451104959aaafd2cce187ff0d501cff59ed141edd871bae67917e249b9e2d4cc",
+      "sha256": "d456e3d227f7db1bac21f50ae58c53563355d89b714fa992cfc9514818cdf17c",
       "source": "generated/public/intelligence-graph/context/0.json",
       "target": "data/runtime/intelligence-graph/context/0.json"
     },
     {
-      "sha256": "aabc16ccd8738f9988bf353b8cbeae65cca7dc622eb82aa17f7209f7af59baae",
+      "sha256": "2dec9a05b3428b7fb6a86dcd20f84e6d47e4d79758c4838eefe7eb5193367602",
       "source": "generated/public/intelligence-graph/context/1.json",
       "target": "data/runtime/intelligence-graph/context/1.json"
     },
     {
-      "sha256": "83057f8a74b4383842eed522eb9b2bf3aa3746db1119e52cd41458060db6a30d",
+      "sha256": "139806cfddc13c97c6a5ccde331c346ac357b6ff79ab55bc97b0686aa64ff6d7",
       "source": "generated/public/intelligence-graph/context/2.json",
       "target": "data/runtime/intelligence-graph/context/2.json"
     },
     {
-      "sha256": "73cfba7e382269fc8589291e485d4d09d0c94f77f41a8974be94533322091a79",
+      "sha256": "be5e23eab79e866298c7c0c44971607a5317561ab6725e315a647cc6a8781b6e",
       "source": "generated/public/intelligence-graph/context/3.json",
       "target": "data/runtime/intelligence-graph/context/3.json"
     },
     {
-      "sha256": "76bde6f64ba56dea1bb1f76588a47bdca2153df7fef3285e4575634e012755bb",
+      "sha256": "549079efc25507b3c958eab3c8a79e6db0c279a68f378f3b8fe0fe4fb66db9ec",
       "source": "generated/public/intelligence-graph/context/4.json",
       "target": "data/runtime/intelligence-graph/context/4.json"
     },
     {
-      "sha256": "efc16e5305a0912f8b7d248801038f98401fd56cb7827b477bb724a3c2ce3e21",
+      "sha256": "88166534529c26e409d3d528c953a8b92aff847229d8777ef4ee4f44b7dcab71",
       "source": "generated/public/intelligence-graph/context/5.json",
       "target": "data/runtime/intelligence-graph/context/5.json"
     },
     {
-      "sha256": "00fdffbfcd497cf76c8713fc5dfe39046f8679fcaad9a622afe88047867410d2",
+      "sha256": "6f2ffd68d033c340e8ef7e1ea926def4e8f4beaa7d80162f9d140d8bdbc9a1be",
       "source": "generated/public/intelligence-graph/context/6.json",
       "target": "data/runtime/intelligence-graph/context/6.json"
     },
     {
-      "sha256": "3d6404dc002d7b324d34c79c0c18b4ff7c7032319188b8c318e70f64c8899147",
+      "sha256": "310b68a6229ff49fe0eae4cb8f815a76ac712d2849384cb747ac2f81cb2d0d39",
       "source": "generated/public/intelligence-graph/context/7.json",
       "target": "data/runtime/intelligence-graph/context/7.json"
     },
     {
-      "sha256": "0a193eb2f0da87b7f4ab87cfaa85286987ddbbf4bd837785770a4d4f3bc3843a",
+      "sha256": "43fe7b40f1e83431b84d1d2fc01c6b5be0854fcaf8943ec9078c0eb2e13aaedc",
       "source": "generated/public/intelligence-graph/context/8.json",
       "target": "data/runtime/intelligence-graph/context/8.json"
     },
     {
-      "sha256": "597b9fa9026eeedd7444edca5f6f22905c43900ce4d92e9ec70addcba352fe1a",
+      "sha256": "2a56bc7b9f85a5488c03d2fc9ddaf7dd2451934a20b5fcfdf694a7e983c6ead4",
       "source": "generated/public/intelligence-graph/context/9.json",
       "target": "data/runtime/intelligence-graph/context/9.json"
     },
     {
-      "sha256": "f0fc75fe1f2678cc280370f04ce18cabacf5b8c469a2e677acb57864ce1eeba0",
+      "sha256": "d82897adc265365b7d3669fb2766646b9c77c279759d50456b0fc473387f3e6b",
       "source": "generated/public/intelligence-graph/context/a.json",
       "target": "data/runtime/intelligence-graph/context/a.json"
     },
     {
-      "sha256": "0f9228bd3362f5545c725846a6e0cf1e75eb1763a3bf45944fa0335db9684b16",
+      "sha256": "96eb5803a2689cef742313971fc37a6899483aa3c78f7f615054805279b742a2",
       "source": "generated/public/intelligence-graph/context/b.json",
       "target": "data/runtime/intelligence-graph/context/b.json"
     },
     {
-      "sha256": "11a51ad4330d05b806628db1131eef197b4b47f6110725910e0ce10fd429bb9c",
+      "sha256": "a61ef525987db806c3715e96b6017ce26ae48269a5a87a48850d22ef9e385da8",
       "source": "generated/public/intelligence-graph/context/c.json",
       "target": "data/runtime/intelligence-graph/context/c.json"
     },
     {
-      "sha256": "01baa9088ff4485bee422684e4091a2a73d01cf42ca74a3f8bdb98cf8f6331a4",
+      "sha256": "8662495fabc40d76aee38a4e79edf01238a549ec3a1fb488b86a248cc4efdf9f",
       "source": "generated/public/intelligence-graph/context/d.json",
       "target": "data/runtime/intelligence-graph/context/d.json"
     },
     {
-      "sha256": "6cee307e99ce17124864552dd50c4e7dc46e7cdc7225ca32e439d4e696a3baa6",
+      "sha256": "151cd46ccbba687e9e19cf85e6c58986564b7400c62ab7f54140b4c8a3b14077",
       "source": "generated/public/intelligence-graph/context/e.json",
       "target": "data/runtime/intelligence-graph/context/e.json"
     },
     {
-      "sha256": "809413e02187d0726ca801e55d069bbf8db60771e6e81c7cf1145147863b9424",
+      "sha256": "6fae246406d4b031f911e4cfab7a502fc12fc30a16598e81568f7700b564c080",
       "source": "generated/public/intelligence-graph/context/f.json",
       "target": "data/runtime/intelligence-graph/context/f.json"
     },
     {
-      "sha256": "fd77444c42dd46eeedab96f2797caba7b79a6552be8b0a381314bbb9a1d33531",
+      "sha256": "26afd8d583f1077257523ae1f7a7a1d4a970749b46a609ba8387a279fe1741c4",
       "source": "generated/public/intelligence-graph/entities/access_equity.json",
       "target": "data/runtime/intelligence-graph/entities/access_equity.json"
     },
@@ -168,7 +168,7 @@
       "target": "data/runtime/intelligence-graph/entities/funding_source.json"
     },
     {
-      "sha256": "766aa9652bb0544a1b28c141bb1421643f4fc30d047198fcd5d4e7f88346e80f",
+      "sha256": "8fefd71f294227f8dfb8df6ad660722f8e574e5782e6cc13a8bbab1169d28afb",
       "source": "generated/public/intelligence-graph/entities/geography.json",
       "target": "data/runtime/intelligence-graph/entities/geography.json"
     },
@@ -198,12 +198,12 @@
       "target": "data/runtime/intelligence-graph/entities/organization_type.json"
     },
     {
-      "sha256": "32e0568c9acb2f849ef19a7c230d3d85e42222ec86514d651825900e144e053f",
+      "sha256": "f629f068bde0473fc37ff784b3136fc2f067051e038844b4e7afc2fc123512db",
       "source": "generated/public/intelligence-graph/entities/page.json",
       "target": "data/runtime/intelligence-graph/entities/page.json"
     },
     {
-      "sha256": "97f448688ce381d0c1f7be59b740b37be717f001cf9611046fd35981a8406166",
+      "sha256": "9eca56990c12d057007416d09d7d8730ec1663e66ef046d819035e7028509267",
       "source": "generated/public/intelligence-graph/entities/policy.json",
       "target": "data/runtime/intelligence-graph/entities/policy.json"
     },
@@ -213,7 +213,7 @@
       "target": "data/runtime/intelligence-graph/entities/policy_digest.json"
     },
     {
-      "sha256": "8052da55192353100f78b802acf89c580ec7d28d1e4b408a6b8f713f59edbf4f",
+      "sha256": "e0fc336269833a25ab43a469ac15fe7eabea742507f05f1d324f9b95da6b38ca",
       "source": "generated/public/intelligence-graph/entities/practice.json",
       "target": "data/runtime/intelligence-graph/entities/practice.json"
     },
@@ -238,167 +238,167 @@
       "target": "data/runtime/intelligence-graph/entities/training_opportunity.json"
     },
     {
-      "sha256": "cd2deb2d26df40d0f17a9bdf7452858dd75b512fb000a0856d8511553aa1ca34",
+      "sha256": "29af50300ca65b5c1a5afb4785b3143572a9bbe3d8b4cc45a43bbac9838a3059",
       "source": "generated/public/intelligence-graph/impact-index.json",
       "target": "data/runtime/intelligence-graph/impact-index.json"
     },
     {
-      "sha256": "73b038776e78a8effcfb1834396e4574d7874153cf9d7e8eeaa1f7459e6b9865",
+      "sha256": "da19c14a3515bf11eb0bef9887b624696b996f1cf315cffc90bd30c2ed53ab15",
       "source": "generated/public/intelligence-graph/manifest.json",
       "target": "data/runtime/intelligence-graph/manifest.json"
     },
     {
-      "sha256": "5f208b55e7811b4fd4b8f754cb6ccee87e08cce514d889a695c6dbddb971e270",
+      "sha256": "67eea373df0d94a266b5380095254092b626c04fb3cee596749da286aae102f8",
       "source": "generated/public/intelligence-graph/reader/0.json",
       "target": "data/runtime/intelligence-graph/reader/0.json"
     },
     {
-      "sha256": "1f94d643c92ad3c90ebd2301d9563bad022f2439e41fb82361a2917d6bcb4024",
+      "sha256": "e73b6fe3bb815b443659b5e1bee135bb96e42be344d7f44e08b21b79c16bb2f8",
       "source": "generated/public/intelligence-graph/reader/1.json",
       "target": "data/runtime/intelligence-graph/reader/1.json"
     },
     {
-      "sha256": "edca115ccf9c82fd0b2a81af04846eea59fcb62b9e0b10f12ac7004be3c7ed1e",
+      "sha256": "c80da64ff5363726be6ba5456cc9cd4f427bc2e2da2e48bee896fb8a0baf1a2c",
       "source": "generated/public/intelligence-graph/reader/2.json",
       "target": "data/runtime/intelligence-graph/reader/2.json"
     },
     {
-      "sha256": "fe06fe853bb16f411f55a494f579942b00ad88d6cb8e81b78f654c96051c47f3",
+      "sha256": "aa293c23e175968e13dd4f18d91de7186447bb461f68c25b85b9e6c2561a9a0d",
       "source": "generated/public/intelligence-graph/reader/3.json",
       "target": "data/runtime/intelligence-graph/reader/3.json"
     },
     {
-      "sha256": "e0ecc220f37e81025604f4c457115c73fac421fba6260130057b3ccd405a52e3",
+      "sha256": "bd5a0090ab5083791a6ee93a6b3e3084d4723d310710628939d17f24f47d7370",
       "source": "generated/public/intelligence-graph/reader/4.json",
       "target": "data/runtime/intelligence-graph/reader/4.json"
     },
     {
-      "sha256": "7503e62d7eeb2146116e21cc70bd96ef1ea21c156c09475f1acf7569b92d5824",
+      "sha256": "db66f8b584df77db1541a728c01960149cc83a325fdc67139de8d4f34d279699",
       "source": "generated/public/intelligence-graph/reader/5.json",
       "target": "data/runtime/intelligence-graph/reader/5.json"
     },
     {
-      "sha256": "446112143b0fad80ffb6254d0b9c492ea180bd21435c10f3b1317691ccec8ac6",
+      "sha256": "a7adae679fd0acd200d93927d992b18a9c55a330f74d000425a5a6cbd5491e51",
       "source": "generated/public/intelligence-graph/reader/6.json",
       "target": "data/runtime/intelligence-graph/reader/6.json"
     },
     {
-      "sha256": "c80dc459b338886f1477a520bb88a8854d18f44f7ea50fb09c7914d37fbf328f",
+      "sha256": "7a13830a62c50600ccef0158f8eabd10bb9e20ebbaa0fae47666057c77b1306f",
       "source": "generated/public/intelligence-graph/reader/7.json",
       "target": "data/runtime/intelligence-graph/reader/7.json"
     },
     {
-      "sha256": "5d0ea604932997369cfd6af2865c6d43dfb58b7df510a5d24af7e3f8509c8036",
+      "sha256": "57d1dcd0819baeed228ae111c1ace95937ff819877597b202a4529af7f10871f",
       "source": "generated/public/intelligence-graph/reader/8.json",
       "target": "data/runtime/intelligence-graph/reader/8.json"
     },
     {
-      "sha256": "17b735a87ab4af73049b74ffdd1b855a440258d5e5a5e986de7427902053cdcc",
+      "sha256": "f2d3e97d0198ebc23a8d357e9d1c28535123432feec1bb3324d7e9a38f1ed97a",
       "source": "generated/public/intelligence-graph/reader/9.json",
       "target": "data/runtime/intelligence-graph/reader/9.json"
     },
     {
-      "sha256": "04d8969fdc72caaeb3b878c520ad6a4c111573c59ba0ba558b2d868e93011c67",
+      "sha256": "9009df6072b5f87caebfe00f6be484140e069c4f7968320b7958e08c47f81304",
       "source": "generated/public/intelligence-graph/reader/a.json",
       "target": "data/runtime/intelligence-graph/reader/a.json"
     },
     {
-      "sha256": "825dab70b2fe5cb49178ab238fe63457244cbb701ef5e96966c8468611393199",
+      "sha256": "d80e956b8208fd4c740f21b3828d8e08a690371204e7aad9435a43544dd93c73",
       "source": "generated/public/intelligence-graph/reader/b.json",
       "target": "data/runtime/intelligence-graph/reader/b.json"
     },
     {
-      "sha256": "ced402232bf9d32c65e9e2f900160657fef3929ee46dd5560e62f48f6665f25f",
+      "sha256": "3a62ef153a31d829421de54124047c7eb554ee285fa297061dbfde55fceb8e6a",
       "source": "generated/public/intelligence-graph/reader/c.json",
       "target": "data/runtime/intelligence-graph/reader/c.json"
     },
     {
-      "sha256": "2deb491edb9a6b0b6477a804635fc2ee6811b9bb0b719699b3169889f01bfb73",
+      "sha256": "bc331eb81241843d54ec41515e72443fe4a196f3ce943c995df716224322051e",
       "source": "generated/public/intelligence-graph/reader/d.json",
       "target": "data/runtime/intelligence-graph/reader/d.json"
     },
     {
-      "sha256": "5edf5ce6113f6009f8bb17effb4f62a86f1c724b78df3babd06a9eeb9938b4b1",
+      "sha256": "012dd0e1f8a6f0a7d2b43b0af18fb77af361ce6b0e5c7d88162b992dc7115502",
       "source": "generated/public/intelligence-graph/reader/e.json",
       "target": "data/runtime/intelligence-graph/reader/e.json"
     },
     {
-      "sha256": "b0a4867d7dc0b256451ae5e85f70b716427a561c1fa433563a831140e7b794c3",
+      "sha256": "a1aaf24feb0f085ea21e8e93eb40a2f43eb00d0316a517f04c0f4b599c661aea",
       "source": "generated/public/intelligence-graph/reader/f.json",
       "target": "data/runtime/intelligence-graph/reader/f.json"
     },
     {
-      "sha256": "4aa44b8f03dafab8d332684cbb11c6ee4a68fcec8b19d03404e7fc1dd886db27",
+      "sha256": "ae24721cdabb916ab9c468bb10935b98b43ad4d093db64e18f824d817fd08f35",
       "source": "generated/public/intelligence-graph/relationships/0.json",
       "target": "data/runtime/intelligence-graph/relationships/0.json"
     },
     {
-      "sha256": "ef65a4085a8579a7679f0f258a3c24b6df1804ef12f9485cc7e0d1a9c5b7a397",
+      "sha256": "a9c8782ab5c221a6f47c48ac0ef6ee2b28e7c300203c119c925ab5ab7de0cbf1",
       "source": "generated/public/intelligence-graph/relationships/1.json",
       "target": "data/runtime/intelligence-graph/relationships/1.json"
     },
     {
-      "sha256": "152b101cda5c177a245f5e174631dd72e35cdeabfde62e85d03258c7ccb5aa9b",
+      "sha256": "c27b771085edf70557118a7325ecb4cc876bd8ecda9b53834b5a192d98cad44a",
       "source": "generated/public/intelligence-graph/relationships/2.json",
       "target": "data/runtime/intelligence-graph/relationships/2.json"
     },
     {
-      "sha256": "997205cce18ec67b7c2af908ee25bfbf939cfc873c6f8c1a9aa2ca6cd51095c3",
+      "sha256": "2baa20d90bf942f7ae1a09507b2a8b6f638cbaa4039cc014a459ca70e68245ca",
       "source": "generated/public/intelligence-graph/relationships/3.json",
       "target": "data/runtime/intelligence-graph/relationships/3.json"
     },
     {
-      "sha256": "3d8c759ca97e1d401b44703a51667a1df11b21382e60f0c0bbc30dd2e34ef514",
+      "sha256": "316abcf058c26d321d41d0fc4cb29bab3f832ad90fe8b437a64e1f7a0be39199",
       "source": "generated/public/intelligence-graph/relationships/4.json",
       "target": "data/runtime/intelligence-graph/relationships/4.json"
     },
     {
-      "sha256": "a37728460fb5cfae95876682cafe03e77162c1b1fb367af25a322e0c2db49863",
+      "sha256": "44b3585bb6dcf72fd7775e221a416724fe1b1678869eb5fe943f79b9fd0230fa",
       "source": "generated/public/intelligence-graph/relationships/5.json",
       "target": "data/runtime/intelligence-graph/relationships/5.json"
     },
     {
-      "sha256": "48c32fdef936cf5a39dafc7ecded09e48272668d47e8914e9de9e6ebce0d6dbb",
+      "sha256": "6fb4bb995077523287a76a4d97a7f0ad7cef1b21785617b9310ceb2e8c8c11b3",
       "source": "generated/public/intelligence-graph/relationships/6.json",
       "target": "data/runtime/intelligence-graph/relationships/6.json"
     },
     {
-      "sha256": "87a2e10b9bc556c52e340409fef33c8097d202fb48c18fa142db0537bf09c77e",
+      "sha256": "8bc8c68a328f2d699aa0ca70833bcb2dace2b9c1ffb0e3ba673c2f4112da65ae",
       "source": "generated/public/intelligence-graph/relationships/7.json",
       "target": "data/runtime/intelligence-graph/relationships/7.json"
     },
     {
-      "sha256": "660bfd70891064bff4f6d9c43ffb6bf2d23f2d59021a741644a63342ec9dc17d",
+      "sha256": "85f4a2a163bac834b1bc38eb230a965ee530074fd86e5b6f8a6b6821e9eee6d1",
       "source": "generated/public/intelligence-graph/relationships/8.json",
       "target": "data/runtime/intelligence-graph/relationships/8.json"
     },
     {
-      "sha256": "45080045b50aadf31bea6e20fb211c6bef7909bff27a23d432c92d900331fdde",
+      "sha256": "755260a15d6e2e76e1ab687c1f8a22807bc230cb78dd860cfc678aa610e87b1e",
       "source": "generated/public/intelligence-graph/relationships/9.json",
       "target": "data/runtime/intelligence-graph/relationships/9.json"
     },
     {
-      "sha256": "c078dfe396f00dde9850d9c3f734f1a0310bd01f1e0cf9d5f9257a313f4d1b9d",
+      "sha256": "ec7003563f10efd1ee91d26a989365a209709c67f2028b51f0c664df06ffb99c",
       "source": "generated/public/intelligence-graph/relationships/a.json",
       "target": "data/runtime/intelligence-graph/relationships/a.json"
     },
     {
-      "sha256": "d702515cbec9fbb5421587262cea97e4c0375fbd4c1814a46d007436c765a17f",
+      "sha256": "4804f16d17f60f2ad41d18b43cb01f316356584d542188347ef7dd416d70afe7",
       "source": "generated/public/intelligence-graph/relationships/b.json",
       "target": "data/runtime/intelligence-graph/relationships/b.json"
     },
     {
-      "sha256": "9a6aeffab3def9e0d2ccfd51b90611724137edb6a9a03aab1461ad86a1cdabc2",
+      "sha256": "98e4b5ba98f4a82cf185ce87d3eb66f5d22b70bbc2b8148a1de63d0a28bf1411",
       "source": "generated/public/intelligence-graph/relationships/c.json",
       "target": "data/runtime/intelligence-graph/relationships/c.json"
     },
     {
-      "sha256": "477640418da42aad7b841e5cf68ac7753b9edb549051b928c4da81507e637ab4",
+      "sha256": "9dea88f245add432b8e1ea2b89b69f2ba287231b915f7d52ea96ef0fc297b22b",
       "source": "generated/public/intelligence-graph/relationships/d.json",
       "target": "data/runtime/intelligence-graph/relationships/d.json"
     },
     {
-      "sha256": "af1226884adaf8deeff3a3a18b00bb3309bd8ebf537f94a3fef4de94c24d3a80",
+      "sha256": "7b717b55322f7d3cc9b5c1748a26e818e9b9ad1ac5f6d6c7e375b409f872f6a0",
       "source": "generated/public/intelligence-graph/relationships/e.json",
       "target": "data/runtime/intelligence-graph/relationships/e.json"
     },
@@ -538,7 +538,7 @@
       "target": "data/runtime/labor-market-profiles/markets/49700.json"
     },
     {
-      "sha256": "2c96514b0ff189895133f66f4f7fe152592e3bea6bd7665edfe3b641d59d447c",
+      "sha256": "556d835fcb8cd4ef0eaa40735cd03dbf4d5de5feafca6d704a481f2419e3872c",
       "source": "generated/public/manifest.json",
       "target": "data/runtime/manifest.json"
     },
@@ -643,37 +643,37 @@
       "target": "data/runtime/occupation-explorer/runtime.json"
     },
     {
-      "sha256": "902ca22c6ec4532b7aa8b0a813d27597a1e7383ec925f5304d5703d00a31db66",
+      "sha256": "33149c31205fb0a6b907dcc54d0d96f5f91145287a6a84e7c6376a723a20dfa9",
       "source": "generated/public/policy/backfill-queue.json",
       "target": "data/runtime/policy/backfill-queue.json"
     },
     {
-      "sha256": "ba8273829584cbd92ddd4e4db0277c85f50c58e97556cbdf094a64aafe1344ac",
+      "sha256": "035c794f94727ee2626750c30a317ec07e65b29b83159ca219f022841ed887dd",
       "source": "generated/public/policy/backfill-queue.md",
       "target": "data/runtime/policy/backfill-queue.md"
     },
     {
-      "sha256": "0bf41afa89a695f8328df7acd081742d351b7ffd881cae286e2ad4549ae5a82f",
+      "sha256": "895b6b977efb5e5c57532b4d19d197ee178f52d2c4c7c56163c1cbb69803fcfa",
       "source": "generated/public/policy/deadlines.ics",
       "target": "data/runtime/policy/deadlines.ics"
     },
     {
-      "sha256": "bf79f5c45915e2391e305f3697f59de7d5bfa9ab308bbaa11d2b0f4faa611070",
+      "sha256": "7213e805b5d4222687b14e61f33c48ab01b7d54a7165f6cb1da9f60b2ae81924",
       "source": "generated/public/policy/deadlines.json",
       "target": "data/runtime/policy/deadlines.json"
     },
     {
-      "sha256": "038d3c8742ed224c5d72f1ce472ad1276dc44344295a2a3281b8bd67e5ce4740",
+      "sha256": "896109af7f70dc4d5ef53c547595e12279c24a0657f0b797409ab6bc576f846f",
       "source": "generated/public/policy/records.json",
       "target": "data/runtime/policy/records.json"
     },
     {
-      "sha256": "7c90aec4cc3b98936343a5aa96b7338814d6e84e090a102d432733fa7a9affce",
+      "sha256": "07a39aa2bbb822dc64b356629f0f4c9a278611aca193ff836c23b67884675eb9",
       "source": "generated/public/policy/runtime.json",
       "target": "data/runtime/policy/runtime.json"
     },
     {
-      "sha256": "fdbc8987367f435a70abd4c19428668c5d4b16770454524968bc026cf72b1f30",
+      "sha256": "15e42590aa999c16d2111e159778f2a5596bcb268e55b6a9037cf42b6ecae9b0",
       "source": "generated/public/policy/search-index.json",
       "target": "data/runtime/policy/search-index.json"
     },
@@ -1088,7 +1088,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "b72925466e8c7dde7085f31dee80aed3afa7c4fe",
+  "source_commit": "b227c88d54508fc6da6f4399b5842b5f71144199",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
