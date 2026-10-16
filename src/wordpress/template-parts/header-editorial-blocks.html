@@ -479,6 +479,15 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
   body.ww-mobile-intel-detail .wwo-board-metrics{grid-template-columns:1fr!important}
 }
 
+@media(max-width:760px){
+  .ww-mobile-gutter{margin-left:16px!important;margin-right:16px!important}
+  .ww-mobile-text-gutter{margin-left:16px!important;margin-right:16px!important}
+  .ww-mobile-text-gutter.ww-mobile-text-gutter--pad{margin-left:0!important;margin-right:0!important;padding-left:16px!important;padding-right:16px!important;box-sizing:border-box!important}
+  .ww-mobile-table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .ww-mobile-table-scroll:focus-visible{outline:3px solid #075f70;outline-offset:2px}
+  .ww-runtime-trust-box table{min-width:0!important;width:100%!important}
+}
+
 @media(min-width:761px){
 }
 </style>
@@ -493,7 +502,7 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
   function addTocAndActions(){
     const root=mainRoot(); if(!root)return;
     const h1=root.querySelector('h1'); const hs=[...root.querySelectorAll('h2,h3')].filter(h=>h.offsetParent!==null);
-    if(!h1||hs.length<4||root.scrollHeight<1700)return;
+    if(document.body.classList.contains('home')||!h1||hs.length<4||root.scrollHeight<1700)return;
     hs.forEach((h,i)=>{if(!h.id)h.id='section-'+(i+1)+'-'+h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,42)});
     const toc=document.createElement('details');toc.className='ww-mobile-toc';
      const tocSummary=document.createElement('summary');tocSummary.textContent='On this page';
@@ -632,7 +641,58 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
     const source=nav.closest('.ww-ai-nav-wrap')||nav;source.classList.add('ww-mobile-ai-nav-source');source.insertAdjacentElement('beforebegin',menu);
   }
 
-  function run(){if(innerWidth>760)return;tagMobileFamilies();optimizeLearningTables();addFoundationsMenu();addAIMenu();optimizeGuidanceGrids();optimizePolicyTables();addDataJump();addTocAndActions();addNext()}
+  function scrollsX(el,stop){
+    for(let p=el;p&&p!==stop;p=p.parentElement){const o=getComputedStyle(p).overflowX;if(o==='auto'||o==='scroll')return true}
+    return false;
+  }
+  function touchesEdge(el,vw){
+    const r=el.getBoundingClientRect();
+    return r.width>0&&(r.left<12||r.right>vw-12);
+  }
+  // Injected mobile modules inherit whatever gutter their insertion point has; some have none.
+  function applyGutters(){
+    const vw=document.documentElement.clientWidth;
+    document.querySelectorAll('.ww-mobile-actions,.ww-mobile-toc,.ww-mobile-next').forEach(el=>{if(touchesEdge(el,vw))el.classList.add('ww-mobile-gutter')});
+  }
+  // Give a top-level content block a gutter only when its own text reaches the screen edge.
+  function textAtEdge(el,vw){
+    const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n,seen=0;
+    while((n=walker.nextNode())&&seen<300){
+      if(!n.textContent.trim())continue;seen++;
+      const parent=n.parentElement;if(!parent||scrollsX(parent,el.parentElement)||parent.closest('table'))continue;
+      const range=document.createRange();range.selectNodeContents(n);
+      for(const q of range.getClientRects()){if(q.width>1&&(q.left<6||q.right>vw-6))return true}
+    }
+    return false;
+  }
+  function fixFlushText(){
+    const vw=document.documentElement.clientWidth;
+    document.querySelectorAll('.wp-block-post-content').forEach(root=>{
+      [...root.children].forEach(el=>{
+        if(el.matches('script,style,.ww-mobile-actions,.ww-mobile-toc,.ww-mobile-next,.ww-mobile-gutter'))return;
+        if(!textAtEdge(el,vw))return;
+        // Margins keep list indents and inner spacing; full-bleed or painted blocks take padding instead.
+        const cs=getComputedStyle(el),painted=cs.backgroundColor!=='rgba(0, 0, 0, 0)'||cs.backgroundImage!=='none'||parseFloat(cs.borderLeftWidth)>0;
+        el.classList.add('ww-mobile-text-gutter');
+        if(painted||el.getBoundingClientRect().right>vw+1)el.classList.add('ww-mobile-text-gutter--pad');
+      });
+    });
+  }
+  // A desktop min-width on a table outside any scroll container clips columns off-screen.
+  function rescueClippedTables(){
+    const vw=document.documentElement.clientWidth;
+    document.querySelectorAll('.wp-block-post-content table').forEach(t=>{
+      if(t.closest('.ww-runtime-trust-box')||t.getBoundingClientRect().right<=vw+1||scrollsX(t.parentElement,document.body))return;
+      // Narrow comparison tables read better side by side than behind a sideways scroll.
+      const cols=Math.max(0,...[...t.rows].map(r=>r.cells.length));
+      if(cols&&cols<=3){t.style.setProperty('min-width','0','important');t.style.setProperty('width','100%','important');if(t.getBoundingClientRect().right<=vw+1)return}
+      const wrap=document.createElement('div');wrap.className='ww-mobile-table-scroll';
+      wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Table, scroll sideways for more');wrap.tabIndex=0;
+      t.parentNode.insertBefore(wrap,t);wrap.appendChild(t);
+    });
+  }
+
+  function run(){if(innerWidth>760)return;tagMobileFamilies();optimizeLearningTables();addFoundationsMenu();addAIMenu();optimizeGuidanceGrids();optimizePolicyTables();addDataJump();addTocAndActions();addNext();rescueClippedTables();fixFlushText();applyGutters()}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 })();
 </script>

@@ -63,7 +63,7 @@
 }
 :is(body.page-id-7584,body.page-id-7585,body.page-id-7594,body.page-id-7595,body.page-id-7596,body.page-id-7615,body.page-id-7617,body.page-id-7619) .wwr-actions .wwr-button{
   display:inline-flex;align-items:center;justify-content:center;
-  padding:13px 20px;min-height:48px;border-radius:5px;
+  box-sizing:border-box;padding:13px 20px;min-height:48px;border-radius:5px;
   font:700 16px/1.25 Georgia,"Times New Roman",serif;
   text-align:center;text-decoration:none;transition:background-color .12s ease;
 }
