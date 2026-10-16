@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "source_generated": "2026-09-28",
-  "asset_set_sha256": "591dcb5f2b661d39cdfd6c8e1d3ea430d3300613dc9848c304ca943b65edb615",
+  "asset_set_sha256": "2419c8cc2891ecf4d2f6a515e413453e8c479c209044fc46d1e2dda53db7b55e",
   "asset_count": 159,
   "assets": [
     {
@@ -32,7 +32,7 @@
       "path": "discovery/shards/practice.json",
       "bytes": 71288,
       "records": 88,
-      "sha256": "489c0b39fcaf814a5b673f1bb613e5924bab1f3333a6780aec55974cee7506b6"
+      "sha256": "d7b135e6f456d720002c5f1e43e0ccea10e8b1e97001438233538302cd27cffe"
     },
     {
       "path": "discovery/shards/regional.json",
@@ -50,7 +50,7 @@
       "path": "discovery/shards/site.json",
       "bytes": 163761,
       "records": 260,
-      "sha256": "6b5d654624836b56248223ddb4ca5fba35314d1768853cf45831b5ca5d223bec"
+      "sha256": "4b166be08e14dcf578b5a80da837050d9c48f80cbaf6863d7dc52529c9b25922"
     },
     {
       "path": "intelligence-graph/context/0.json",
@@ -218,7 +218,7 @@
       "path": "intelligence-graph/entities/page.json",
       "bytes": 141926,
       "records": 256,
-      "sha256": "d640afeebac7529e6cdd331b72dd448f3c6de1a6df16cdaa5b65bf1d3cfb8646"
+      "sha256": "4421e0c88676b0557167ec6da66d3590cd07f8027c61351712d448813fc19c12"
     },
     {
       "path": "intelligence-graph/entities/policy.json",
@@ -236,7 +236,7 @@
       "path": "intelligence-graph/entities/practice.json",
       "bytes": 52001,
       "records": 88,
-      "sha256": "1b2c6ac545692552feeab7ef6d6f20c1e4a474f176db7e5919fd4c9ea73ed799"
+      "sha256": "5ca64810f3996e8a498a06f0d908de66a16fead339d2609d9987ce64bf60f782"
     },
     {
       "path": "intelligence-graph/entities/program.json",
@@ -272,7 +272,7 @@
       "path": "intelligence-graph/manifest.json",
       "bytes": 11325,
       "records": 1575,
-      "sha256": "508326b95c334c0dd5168b37d5f2129392b2e88c0f376090ba1c94ed491d740e"
+      "sha256": "6f7bdedc88d19f6c5f8a5d29155cf2a2a1dc9f593c0a2997020af36ce79c6207"
     },
     {
       "path": "intelligence-graph/reader/0.json",
