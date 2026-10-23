@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "source_generated": "2026-09-28",
-  "asset_set_sha256": "a943818d6c9893cc127789cd25b84e43cfb3e55aeb268611f7045e60e6366d09",
+  "asset_set_sha256": "6ff5b5d749c2fad41a120adc590b7a33554c8e4b23240d7b0a44ae8df6e78b7d",
   "asset_count": 159,
   "assets": [
     {
@@ -744,15 +744,15 @@
     },
     {
       "path": "policy/backfill-queue.json",
-      "bytes": 184316,
-      "records": 227,
-      "sha256": "b8ed34ed7b45a7037ef3c93abdd5ec6b5550ee3d761438f2b514c5ccebd675a2"
+      "bytes": 185132,
+      "records": 228,
+      "sha256": "6e994c5b34338828dddba6b767f29353edb72fd37da2b0a198aa5319bf316274"
     },
     {
       "path": "policy/backfill-queue.md",
       "bytes": 10369,
-      "records": 227,
-      "sha256": "384df7ff88f6efa971d926723b10a4d347b5d6774de21a0abe03ded1cc313f6c"
+      "records": 228,
+      "sha256": "314e5b306b1aeb15b324d11ecfa35e6413ff910f89e27f7b0a0e08e4c4935d50"
     },
     {
       "path": "policy/deadlines.ics",
@@ -768,21 +768,21 @@
     },
     {
       "path": "policy/records.json",
-      "bytes": 251559,
-      "records": 252,
-      "sha256": "f2cc059924fd6ee497f59cab14b4dee99c0fb84a483f95071e22c08e5be9d321"
+      "bytes": 252577,
+      "records": 253,
+      "sha256": "5baafc026dd64ab0b698f911846529c016d60541826deb18a82d1f2ef5cea6ef"
     },
     {
       "path": "policy/runtime.json",
-      "bytes": 139634,
-      "records": 252,
-      "sha256": "d5a1389dee5f1c3e2e6129b8275a75eaafacd01f7ddc9da1d99b4d9880634271"
+      "bytes": 140328,
+      "records": 253,
+      "sha256": "dc080a95c89bbc38b56d5008afe3dd440cb955b9fa69e42eb9202d25ffdf3cf0"
     },
     {
       "path": "policy/search-index.json",
-      "bytes": 259365,
-      "records": 252,
-      "sha256": "bb1e3cc7aa4e897413555d7b78f6e87ad785a7e4ed25a3af6d71e7154964c760"
+      "bytes": 260749,
+      "records": 253,
+      "sha256": "61676c48a82bc76b6b486b9f732940aefb1ece9885afdad9e63e544a7c93adf2"
     },
     {
       "path": "sector-partnerships/index.json",
@@ -962,7 +962,7 @@
   "deferred_reader": {
     "release": "2026-10-16-a",
     "reader_contexts": 368,
-    "policy_records": 252,
+    "policy_records": 253,
     "status": "DEFERRED_UNCHANGED"
   }
 }

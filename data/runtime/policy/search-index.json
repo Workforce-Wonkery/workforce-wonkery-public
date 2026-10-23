@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "count": 252,
+  "count": 253,
   "records": [
     {
       "id": 7789,
@@ -1237,6 +1237,38 @@
       ],
       "official_source": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2157",
       "search": "ab 2157 — california removes the sunset on its oil-and-gas worker transition program 2026-09-21 california legislation california-legislation cross-system workforce policy cross-system-workforce-policy sector & industry initiatives sector-industry-initiatives"
+    },
+    {
+      "id": 7830,
+      "title": "DOR Order of Selection: What AJCCs Should Do While VR Applicants Wait",
+      "date": "2026-09-21",
+      "link": "https://workforcewonkery.com/2026/09/21/dor-order-of-selection-ajcc-referrals-waitlist/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        },
+        {
+          "slug": "other-official-guidance",
+          "name": "Other Official Guidance"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        },
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        }
+      ],
+      "official_source": "https://dor.ca.gov/Home/OrderOfSelection",
+      "search": "dor order of selection: what ajccs should do while vr applicants wait 2026-09-21 cross-system workforce policy cross-system-workforce-policy other official guidance other-official-guidance ajcc & service delivery ajcc-service-delivery civil rights, equity & accessibility civil-rights-equity-accessibility supportive services & public benefits supportive-services-public-benefits"
     },
     {
       "id": 7469,
