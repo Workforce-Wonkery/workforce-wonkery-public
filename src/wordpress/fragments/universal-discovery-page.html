@@ -189,9 +189,9 @@ function shardOrder(q,m){const [i,score]=intent(q,m),base=[];
  const n=norm(q);if(score<1?(!/\b(ab|sb|tegl|wsin|wsd)\s*\d+/i.test(q)?n.split(' ').length>1:false):false)base.push('occupation-11-29','occupation-31-59');
  return [...new Set(base.concat(Object.keys(m.runtime.shards)))];
 }
-async function loadShard(name){if(loaded.has(name))return;const m=await getManifest(),meta=m.runtime.shards[name];if(!meta)return;const data=await pageJson(meta.rest,'ww-discovery-shard');docs.push(...(data.records||[]));loaded.add(name)}
+async function loadShard(name){if(loaded.has(name))return;const m=await getManifest(),meta=m.runtime.shards[name];if(!meta)return;const data=await pageJson(meta.rest,'ww-discovery-shard');docs.push(...(data.records||[]).filter(doc=>doc.type!=='Policy Pulse'));loaded.add(name)}
 function expand(q,m){let n=norm(q);(m.aliases.typo_hints||[]).forEach(([wrong,right])=>{n=n.replace(new RegExp('\\b'+norm(wrong).replace(/ /g,'\\s+')+'\\b','g'),norm(right))});const set=new Set(words(n));(m.aliases.groups||[]).forEach(g=>{const terms=[g.canonical].concat(g.terms||[]);if(terms.some(t=>n.includes(norm(t))))terms.forEach(t=>words(t).forEach(w=>set.add(w)))});return {phrase:n,tokens:[...set]}}
-function family(doc){if(['Policy Brief','Policy Pulse','Policy Tool'].includes(doc.type))return'policy';if(['Quickstart','Foundation','Practice'].includes(doc.type))return'practice';if(['Occupation','Labor Market','Sector Partnership','Training Opportunity','Access & Equity','Data'].includes(doc.type))return'data';return'site'}
+function family(doc){if(['Policy Brief','Policy Tool'].includes(doc.type))return'policy';if(['Quickstart','Foundation','Practice'].includes(doc.type))return'practice';if(['Occupation','Labor Market','Sector Partnership','Training Opportunity','Access & Equity','Data'].includes(doc.type))return'data';return'site'}
 function scoreDoc(doc,qx,primaryIntent){const title=norm(doc.title),id=norm(doc.identifier),geo=norm(doc.geography),search=norm(doc.search),aliases=norm((doc.aliases||[]).join(' '));let s=Number(doc.priority||0)/10;
  if(id?qx.phrase===id:false)s+=300;if(title===qx.phrase)s+=250;else if(title.startsWith(qx.phrase))s+=190;else if(title.includes(qx.phrase))s+=145;
  if(search.includes(qx.phrase))s+=65;if(geo?geo.includes(qx.phrase):false)s+=90;if(aliases?aliases.includes(qx.phrase):false)s+=80;
