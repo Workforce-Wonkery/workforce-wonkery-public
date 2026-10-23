@@ -1,7 +1,39 @@
 {
   "schema_version": "1.0",
-  "count": 249,
+  "count": 252,
   "records": [
+    {
+      "id": 7789,
+      "title": "California’s $44.4 Million Apprenticeship Announcement: Awards, Not an Open Grant",
+      "date": "2026-10-16",
+      "link": "https://workforcewonkery.com/2026/10/16/california-44-million-apprenticeship-awards-aif-etp/",
+      "categories": [
+        {
+          "slug": "funding-grant-notices",
+          "name": "Funding & Grant Notices"
+        },
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "funding-grants",
+          "name": "Funding & Grants"
+        },
+        {
+          "slug": "apprenticeship",
+          "name": "Apprenticeship"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        }
+      ],
+      "official_source": "https://www.gov.ca.gov/2026/10/16/governor-newsom-supports-nearly-700000-earn-and-learn-opportunities-announces-49000-new-apprenticeships-for-californians/",
+      "search": "california’s $44.4 million apprenticeship announcement: awards, not an open grant 2026-10-16 funding & grant notices funding-grant-notices workforce education & training policy workforce-education-training-policy funding & grants funding-grants apprenticeship apprenticeship training & education training-education"
+    },
     {
       "id": 7705,
       "title": "GENERAL-26-64 — Workforce Pell FAQs Turn Federal Rules Into Implementation Decisions",
@@ -25,6 +57,38 @@
       ],
       "official_source": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-10-15/availability-workforce-pell-regulations-frequently-asked-questions",
       "search": "general-26-64 — workforce pell faqs turn federal rules into implementation decisions 2026-10-15 federal rules & notices federal-rules-notices workforce education & training policy workforce-education-training-policy training & education training-education"
+    },
+    {
+      "id": 7788,
+      "title": "ACIN I-45-26: California Sets a Common Rulebook for Three Housing Programs",
+      "date": "2026-10-13",
+      "link": "https://workforcewonkery.com/2026/10/13/acin-i-45-26-housing-homelessness-program-regulations/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        },
+        {
+          "slug": "other-official-guidance",
+          "name": "Other Official Guidance"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "supportive-services-public-benefits",
+          "name": "Supportive Services & Public Benefits"
+        },
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-45_26.pdf?ver=WSoBCrqEufMx4oi8X9BvOg%3D%3D",
+      "search": "acin i-45-26: california sets a common rulebook for three housing programs 2026-10-13 cross-system workforce policy cross-system-workforce-policy other official guidance other-official-guidance supportive services & public benefits supportive-services-public-benefits ajcc & service delivery ajcc-service-delivery civil rights, equity & accessibility civil-rights-equity-accessibility"
     },
     {
       "id": 7697,
@@ -2057,6 +2121,38 @@
       ],
       "official_source": "https://www.dol.gov/agencies/eta/advisories/ten-no-02-26",
       "search": "ten 02-26 — wagner-peyser employment service staffing final rule 2026-08-20 federal rules &amp; notices federal-rules-notices usdol tens usdol-tens wagner-peyser wagner-peyser ajcc & service delivery ajcc-service-delivery wioa wioa"
+    },
+    {
+      "id": 7787,
+      "title": "2027 California Minimum Wage: What Workforce Boards Should Recheck",
+      "date": "2026-08-13",
+      "link": "https://workforcewonkery.com/2026/08/13/2027-california-minimum-wage-workforce-board-implications/",
+      "categories": [
+        {
+          "slug": "cross-system-workforce-policy",
+          "name": "Cross-System Workforce Policy"
+        },
+        {
+          "slug": "other-official-guidance",
+          "name": "Other Official Guidance"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "fiscal-administrative",
+          "name": "Fiscal & Administrative"
+        },
+        {
+          "slug": "youth",
+          "name": "Youth"
+        }
+      ],
+      "official_source": "https://www.dir.ca.gov/DIRNews/2026/2026-66.html",
+      "search": "2027 california minimum wage: what workforce boards should recheck 2026-08-13 cross-system workforce policy cross-system-workforce-policy other official guidance other-official-guidance employer services & work-based learning employer-services-work-based-learning fiscal & administrative fiscal-administrative youth youth"
     },
     {
       "id": 70,

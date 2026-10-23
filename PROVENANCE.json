@@ -538,7 +538,7 @@
       "target": "data/runtime/labor-market-profiles/markets/49700.json"
     },
     {
-      "sha256": "3c95e86943ae979b14c3d2acb0465de6054ebb71f71e3e42b14587bc9396d34d",
+      "sha256": "1b8d1ff7fe2a7e27fb034af464e3061873c1f67ba914f6a77becd9262512da30",
       "source": "generated/public/manifest.json",
       "target": "data/runtime/manifest.json"
     },
@@ -643,12 +643,12 @@
       "target": "data/runtime/occupation-explorer/runtime.json"
     },
     {
-      "sha256": "33149c31205fb0a6b907dcc54d0d96f5f91145287a6a84e7c6376a723a20dfa9",
+      "sha256": "b8ed34ed7b45a7037ef3c93abdd5ec6b5550ee3d761438f2b514c5ccebd675a2",
       "source": "generated/public/policy/backfill-queue.json",
       "target": "data/runtime/policy/backfill-queue.json"
     },
     {
-      "sha256": "035c794f94727ee2626750c30a317ec07e65b29b83159ca219f022841ed887dd",
+      "sha256": "384df7ff88f6efa971d926723b10a4d347b5d6774de21a0abe03ded1cc313f6c",
       "source": "generated/public/policy/backfill-queue.md",
       "target": "data/runtime/policy/backfill-queue.md"
     },
@@ -663,17 +663,17 @@
       "target": "data/runtime/policy/deadlines.json"
     },
     {
-      "sha256": "896109af7f70dc4d5ef53c547595e12279c24a0657f0b797409ab6bc576f846f",
+      "sha256": "f2cc059924fd6ee497f59cab14b4dee99c0fb84a483f95071e22c08e5be9d321",
       "source": "generated/public/policy/records.json",
       "target": "data/runtime/policy/records.json"
     },
     {
-      "sha256": "07a39aa2bbb822dc64b356629f0f4c9a278611aca193ff836c23b67884675eb9",
+      "sha256": "d5a1389dee5f1c3e2e6129b8275a75eaafacd01f7ddc9da1d99b4d9880634271",
       "source": "generated/public/policy/runtime.json",
       "target": "data/runtime/policy/runtime.json"
     },
     {
-      "sha256": "15e42590aa999c16d2111e159778f2a5596bcb268e55b6a9037cf42b6ecae9b0",
+      "sha256": "bb1e3cc7aa4e897413555d7b78f6e87ad785a7e4ed25a3af6d71e7154964c760",
       "source": "generated/public/policy/search-index.json",
       "target": "data/runtime/policy/search-index.json"
     },
@@ -1088,7 +1088,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "4aeea86462e25695d066069c2275ed27556df7bf",
+  "source_commit": "da683a663e1dad1f4c4c4fc60317f99532837d6a",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }

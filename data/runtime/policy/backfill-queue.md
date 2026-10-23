@@ -1,8 +1,8 @@
 # Policy Lifecycle Backfill Queue
 
 Governed records: 25  
-Remaining indexed records: 224  
-Immediate / next / routine: 9 / 38 / 177
+Remaining indexed records: 227  
+Immediate / next / routine: 9 / 38 / 180
 
 | Rank | Score | Tier | Identifier | Brief | Why now |
 |---:|---:|---|---|---|---|
