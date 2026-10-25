@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "count": 253,
+  "count": 254,
   "records": [
     {
       "id": 7789,
@@ -1405,6 +1405,38 @@
       ],
       "official_source": "https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-16/",
       "search": "wsin26-16 — california builds statewide infrastructure around ems workforce pathways 2026-09-17 edd information notices edd-information-notices funding & grant notices funding-grant-notices sector & industry initiatives sector-industry-initiatives training & education training-education funding & grants funding-grants"
+    },
+    {
+      "id": 7838,
+      "title": "ESS 26-62: California Changes How College Training Programs Are Classified",
+      "date": "2026-09-17",
+      "link": "https://workforcewonkery.com/2026/09/17/ess-26-62-top-cip-workforce-board-implications/",
+      "categories": [
+        {
+          "slug": "workforce-education-training-policy",
+          "name": "Workforce Education & Training Policy"
+        },
+        {
+          "slug": "other-official-guidance",
+          "name": "Other Official Guidance"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "ajcc-service-delivery",
+          "name": "AJCC & Service Delivery"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        }
+      ],
+      "official_source": "https://www.cccco.edu/wp-content/uploads/2026/09/ess-26-62-transition-from-top-codes-to-cip-codes-a11y_9f114f.pdf",
+      "search": "ess 26-62: california changes how college training programs are classified 2026-09-17 workforce education & training policy workforce-education-training-policy other official guidance other-official-guidance training & education training-education ajcc & service delivery ajcc-service-delivery sector & industry initiatives sector-industry-initiatives"
     },
     {
       "id": 1872,
