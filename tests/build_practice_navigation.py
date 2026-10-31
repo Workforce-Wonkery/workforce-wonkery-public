@@ -22,7 +22,7 @@ home_style='''<style>
 #ww-practice-v2 .practice-hero-image{position:absolute;z-index:-2;right:0;top:0;width:65%;height:100%;object-fit:cover;object-position:center}
 #ww-practice-v2 .practice-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#fcfaf6 0%,#fcfaf6 39%,rgba(252,250,246,.94) 44%,rgba(252,250,246,.64) 48%,rgba(252,250,246,.16) 54%,rgba(252,250,246,0) 61%)}
 #ww-practice-v2 .practice-hero-copy{max-width:510px;width:44%}
-#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,4.5vw,64px)}
+#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,4.5vw,64px)!important}
 #ww-practice-v2 .practice-hero .intro{font-size:22px;line-height:1.45}
 #ww-practice-v2 .practice-hero .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:16px}
 #ww-practice-v2 .practice-home-search{padding-top:8px}
@@ -36,7 +36,7 @@ home_style='''<style>
 #ww-practice-v2 .practice-hero-image{position:relative;width:calc(100% + 48px);max-width:none;height:280px;margin:0 -24px 28px;object-position:center 45%}
 #ww-practice-v2 .practice-hero:after{display:none}
 #ww-practice-v2 .practice-hero-copy{width:100%;max-width:680px}
-#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,7vw,60px)}
+#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,7vw,60px)!important}
 #ww-practice-v2 .learning-layout{gap:24px}
 }
 @media(max-width:640px){
