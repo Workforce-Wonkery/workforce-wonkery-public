@@ -4,32 +4,185 @@
     {
       "id": "participants",
       "title": "Participant services",
-      "summary": "Eligibility, priority, supportive services, youth, exit and follow-up."
+      "summary": "Eligibility, priority of service, supportive services, Youth, exit and follow-up.",
+      "intro": "Most participant questions come down to two things: does the person qualify, and what can WIOA pay for? Start with the decision in front of you, and keep the file telling one consistent story.",
+      "start": 1114,
+      "tasks": [
+        1558,
+        1389,
+        1557,
+        1559,
+        1464,
+        1390
+      ],
+      "keep": [
+        1116,
+        1198,
+        7801
+      ],
+      "learn": [
+        940,
+        1453,
+        1210
+      ],
+      "ideas": [
+        7474,
+        7595,
+        3851
+      ]
     },
     {
       "id": "training",
       "title": "Training & ETPL",
-      "summary": "Training requests, providers, apprenticeship and informed choice."
+      "summary": "Training requests, ITAs, ETPL providers, apprenticeship and informed customer choice.",
+      "intro": "A training decision has two parts: whether the participant meets the WIOA test for training, and whether this program and funding mechanism fit. ETPL work keeps the list of eligible programs current and trustworthy.",
+      "start": 7531,
+      "tasks": [
+        1388,
+        7533,
+        7534,
+        7535,
+        7538,
+        7540
+      ],
+      "keep": [
+        1124,
+        7548,
+        7544,
+        7543
+      ],
+      "learn": [
+        7550,
+        2641,
+        2642
+      ],
+      "ideas": [
+        6552,
+        7615,
+        3851
+      ]
     },
     {
       "id": "employers",
       "title": "Employer services & sectors",
-      "summary": "Employer engagement, OJT, IWT, Rapid Response and sector partnerships."
+      "summary": "Employer engagement, OJT, IWT, Rapid Response, job quality and sector partnerships.",
+      "intro": "Employer services work best as problem-solving rather than a menu of programs. Diagnose the business need, choose the response that fits, and track whether interest turns into a real commitment.",
+      "start": 1394,
+      "tasks": [
+        1394,
+        1561,
+        1574,
+        1465
+      ],
+      "keep": [
+        7584,
+        941
+      ],
+      "learn": [
+        1454,
+        941,
+        1436
+      ],
+      "ideas": [
+        6551,
+        7585,
+        7617,
+        6554,
+        7475,
+        6555
+      ]
     },
     {
       "id": "partners",
       "title": "AJCCs & partner coordination",
-      "summary": "Service access, referrals, partner agreements and benefits coordination."
+      "summary": "AJCC operations, referrals, partner agreements and benefits coordination, including H.R. 1.",
+      "intro": "An AJCC is a network, not a building. The hard part is usually the handoff: whether a referral becomes a service, and whether partner agreements still match how the system actually works.",
+      "start": 1115,
+      "tasks": [
+        1468
+      ],
+      "keep": [
+        7861,
+        7594,
+        7839,
+        7802,
+        7831
+      ],
+      "learn": [
+        1433,
+        2643
+      ],
+      "ideas": [
+        7619,
+        7596,
+        7595,
+        6553
+      ]
     },
     {
       "id": "oversight",
       "title": "Board operations & oversight",
-      "summary": "Governance, funding, procurement, contracts and monitoring."
+      "summary": "Board governance, authority, funding, procurement, contracts, monitoring and policy.",
+      "intro": "Board work turns on authority and money: who can decide, which rule controls, and whether the record will hold up when someone checks. These resources help you get the decision in the right place the first time.",
+      "start": 1122,
+      "tasks": [
+        1395,
+        1392,
+        1566,
+        1569,
+        1393,
+        1570,
+        1466,
+        1467,
+        1568,
+        1560
+      ],
+      "keep": [
+        1194,
+        1104,
+        1106,
+        1195,
+        1200,
+        1197
+      ],
+      "learn": [
+        1429,
+        1431,
+        2640,
+        939
+      ],
+      "ideas": [
+        6547,
+        3851,
+        6546
+      ]
     },
     {
       "id": "performance",
       "title": "Performance & improvement",
-      "summary": "Results, CalJOBS data, service design and continuous improvement."
+      "summary": "WIOA performance, CalJOBS data, service design and continuous improvement.",
+      "intro": "A performance number is the end of a long chain of eligibility, service, exit and wage decisions. Diagnose before you react, fix the record at its source, and test small changes in service design.",
+      "start": 1105,
+      "tasks": [
+        1391,
+        1567,
+        1390,
+        7537
+      ],
+      "keep": [
+        1198,
+        7545
+      ],
+      "learn": [
+        1434,
+        1435,
+        2644
+      ],
+      "ideas": [
+        7596,
+        7594,
+        7615
+      ]
     }
   ],
   "resources": [
@@ -41,7 +194,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "ETPL workflow routing and issue classification",
+      "summary": "Start with what happened. This router sends you to the right provider, program, reporting, apprenticeship, reciprocity or compliance workflow.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -55,7 +208,12 @@
       ],
       "type": "Example",
       "summary": "Washington’s experience raises a useful question: did a new job become a more secure month?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7473,
+        7474,
+        7801
+      ]
     },
     {
       "id": 7540,
@@ -65,9 +223,14 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "ETPL compliance, removal, participant protection, appeals, incident reporting",
+      "summary": "When a provider or program may no longer meet ETPL requirements: protect participants, then route the hold, removal, notice or appeal.",
       "aliases": [
         "eligible training provider list"
+      ],
+      "related": [
+        7549,
+        7551,
+        7543
       ]
     },
     {
@@ -78,7 +241,7 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "How AJCCs work as a network: required partners, MOUs, infrastructure funding, operator roles, referrals, co-enrollment and certification.",
       "aliases": []
     },
     {
@@ -89,7 +252,7 @@
         "performance"
       ],
       "type": "Tool & reference",
-      "summary": "Test whether documentation tells a clear, defensible story.",
+      "summary": "Judge whether a participant, provider or contract record tells one defensible story, with fictional worked examples.",
       "aliases": []
     },
     {
@@ -101,7 +264,12 @@
       ],
       "type": "Research",
       "summary": "Who owns the work between employer interest and a functioning program?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7538,
+        2642,
+        1574
+      ]
     },
     {
       "id": 1557,
@@ -111,8 +279,13 @@
         "participants"
       ],
       "type": "Quickstart",
-      "summary": "Supportive services and needs-related payments",
-      "aliases": []
+      "summary": "Decide whether WIOA may pay for a support, whether another program should, and whether needs-related payment rules apply.",
+      "aliases": [],
+      "related": [
+        7474,
+        1114,
+        1453
+      ]
     },
     {
       "id": 1388,
@@ -122,10 +295,18 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "Participant training approval / ITA / ETPL",
+      "summary": "Two separate questions: does this person meet the WIOA test for training, and can this training be funded through an ITA or another mechanism?",
       "aliases": [
         "ITA",
-        "individual training account"
+        "individual training account",
+        "tuition",
+        "training funding"
+      ],
+      "related": [
+        1124,
+        7548,
+        2641,
+        7531
       ]
     },
     {
@@ -136,7 +317,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "A beta that searches curated California ETPL answers and points you to the governing playbook instead of inventing an answer.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -149,8 +330,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Subrecipient risk and monitoring",
-      "aliases": []
+      "summary": "Assess a subrecipient’s risk before and during the award, match monitoring to that risk and close corrective actions.",
+      "aliases": [],
+      "related": [
+        1106,
+        1104,
+        1393
+      ]
     },
     {
       "id": 7801,
@@ -161,8 +347,13 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Help a working student plan the right SSI or Medi-Cal benefits handoff before a paid placement starts.",
-      "aliases": []
+      "summary": "Paid work can raise benefits questions. Help a working student plan the SSI or Medi-Cal handoff before a placement starts.",
+      "aliases": [],
+      "related": [
+        7861,
+        1468,
+        1116
+      ]
     },
     {
       "id": 7596,
@@ -174,7 +365,12 @@
       ],
       "type": "Example",
       "summary": "What could a small test reveal about the moment a customer loses track of the next step?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7594,
+        1433,
+        2644
+      ]
     },
     {
       "id": 7839,
@@ -184,8 +380,13 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "The October 6 update to the CF 886 notice changed wording, not rules. A reason for AJCC and CalFresh teams to compare their referral scripts.",
+      "aliases": [],
+      "related": [
+        7861,
+        7802,
+        1468
+      ]
     },
     {
       "id": 7802,
@@ -195,8 +396,12 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "A short partner note on CalFresh ESAP changes for some adults 60 to 64, starting March 1, 2027.",
+      "aliases": [],
+      "related": [
+        7861,
+        7839
+      ]
     },
     {
       "id": 3851,
@@ -211,8 +416,18 @@
         "performance"
       ],
       "type": "Example",
-      "summary": "Browse documented local approaches by topic, workforce board, or region.",
-      "aliases": []
+      "summary": "Sourced examples from all 45 local workforce boards. Filter by region, board, topic or the problem you are trying to solve.",
+      "aliases": [
+        "promising practices",
+        "innovation",
+        "other boards",
+        "local examples"
+      ],
+      "related": [
+        6546,
+        6547,
+        7596
+      ]
     },
     {
       "id": 7545,
@@ -222,7 +437,7 @@
         "performance"
       ],
       "type": "Tool & reference",
-      "summary": "CalJOBS ETPL provider, program, change, continued-eligibility, and performance workflows",
+      "summary": "Task-specific CalJOBS walkthroughs for the ETPL screens coordinators and providers use most.",
       "aliases": []
     },
     {
@@ -233,8 +448,13 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "What workforce partners can learn from CalWORKs’ new exit survey without mistaking a small sample for everyone’s experience.",
+      "aliases": [],
+      "related": [
+        7861,
+        7594,
+        2644
+      ]
     },
     {
       "id": 1394,
@@ -246,12 +466,21 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "OJT, IWT, and employer training strategy selection",
+      "summary": "Start with the employer’s business problem, then choose among OJT, IWT, apprenticeship, recruitment, Rapid Response and other strategies.",
       "aliases": [
         "ITA",
         "individual training account",
         "on the job training",
-        "hiring subsidy"
+        "hiring subsidy",
+        "employer engagement",
+        "business services",
+        "incumbent worker training"
+      ],
+      "related": [
+        1561,
+        1454,
+        6551,
+        7585
       ]
     },
     {
@@ -262,7 +491,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Spot recurring weaknesses and improve the controls behind them.",
+      "summary": "Catch a process weakness before it becomes a finding, questioned cost or repeated staff error.",
       "aliases": []
     },
     {
@@ -273,7 +502,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "From classifying the relationship through agreements, invoices, monitoring, modifications and closeout.",
       "aliases": []
     },
     {
@@ -284,8 +513,13 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "CalJOBS data correction and data validation",
-      "aliases": []
+      "summary": "Correct a CalJOBS record that does not match what happened, with a traceable basis rather than a better-looking report.",
+      "aliases": [],
+      "related": [
+        1105,
+        1390,
+        1559
+      ]
     },
     {
       "id": 7543,
@@ -295,7 +529,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Current ETPL directive, reporting status, CalJOBS watch, recurring cycle, trigger events",
+      "summary": "What a California ETPL coordinator should know right now: directives, reporting status, CalJOBS changes, deadlines and triggers.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -308,8 +542,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Subrecipient vs contractor classification",
-      "aliases": []
+      "summary": "Classify a WIOA-funded relationship by what the entity will actually do, before the procurement or agreement hardens around the wrong choice.",
+      "aliases": [],
+      "related": [
+        1569,
+        1106,
+        2640
+      ]
     },
     {
       "id": 1568,
@@ -319,8 +558,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Local workforce policy design and authority",
-      "aliases": []
+      "summary": "Turn federal and California requirements, plus local discretion, into a board policy staff can actually follow.",
+      "aliases": [],
+      "related": [
+        1194,
+        1560,
+        942
+      ]
     },
     {
       "id": 1389,
@@ -330,8 +574,18 @@
         "participants"
       ],
       "type": "Quickstart",
-      "summary": "Adult priority of service",
-      "aliases": []
+      "summary": "After Adult eligibility is established, place the participant in California’s priority sequence, including veterans’ priority and local groups.",
+      "aliases": [
+        "qualify",
+        "eligible",
+        "veterans"
+      ],
+      "related": [
+        1114,
+        1558,
+        1453,
+        1390
+      ]
     },
     {
       "id": 1558,
@@ -341,8 +595,19 @@
         "participants"
       ],
       "type": "Quickstart",
-      "summary": "Dislocated Worker eligibility",
-      "aliases": []
+      "summary": "Pick the right Dislocated Worker eligibility pathway, test every element and write a defensible determination.",
+      "aliases": [
+        "qualify",
+        "layoff",
+        "laid off",
+        "eligible"
+      ],
+      "related": [
+        1114,
+        1389,
+        1453,
+        1390
+      ]
     },
     {
       "id": 1561,
@@ -352,10 +617,15 @@
         "employers"
       ],
       "type": "Quickstart",
-      "summary": "OJT agreements and employer reimbursement",
+      "summary": "Turn an OJT decision into a defensible employer agreement: skills, duration, wages, reimbursement, monitoring and documentation.",
       "aliases": [
         "on the job training",
         "hiring subsidy"
+      ],
+      "related": [
+        1394,
+        2642,
+        1454
       ]
     },
     {
@@ -366,8 +636,16 @@
         "employers"
       ],
       "type": "Tool & reference",
-      "summary": "Follow an employer group from first contact to a real commitment and service delivered.",
-      "aliases": []
+      "summary": "A full contact log can feel like progress. Track which employers actually made a commitment, what was delivered and where it stalled.",
+      "aliases": [
+        "employer outreach",
+        "business services"
+      ],
+      "related": [
+        7585,
+        6551,
+        1574
+      ]
     },
     {
       "id": 6551,
@@ -378,7 +656,16 @@
       ],
       "type": "Research",
       "summary": "What builds lasting employer relationships beyond outreach counts?",
-      "aliases": []
+      "aliases": [
+        "business services",
+        "employer outreach"
+      ],
+      "related": [
+        7585,
+        7584,
+        1394,
+        7475
+      ]
     },
     {
       "id": 1123,
@@ -388,7 +675,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "How WIOA Section 188 shapes communication, enrollment, language and disability access, complaints and monitoring.",
       "aliases": []
     },
     {
@@ -399,9 +686,16 @@
         "training"
       ],
       "type": "Collection",
-      "summary": "Learn the role, handle provider tasks, and find current California guidance.",
+      "summary": "Learn the role, follow the provider lifecycle, handle common tasks and know when to stop and verify the rule.",
       "aliases": [
-        "eligible training provider list"
+        "eligible training provider list",
+        "coordinator"
+      ],
+      "related": [
+        7550,
+        7544,
+        7543,
+        7548
       ]
     },
     {
@@ -412,7 +706,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "Twelve realistic ETPL scenarios for building judgment before a real provider or participant is affected.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -425,7 +719,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Copy checklists and communication starters for ETPL workflows.",
+      "summary": "Copyable checklists, provider messages, reporting reminders and backup-coordinator handoff tools.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -438,8 +732,13 @@
         "participants"
       ],
       "type": "Quickstart",
-      "summary": "Title I exit, common exit, planned future services, exclusions, and follow-up",
-      "aliases": []
+      "summary": "Decide when services are really ending, what that does to the exit date and common exit, and how follow-up should begin.",
+      "aliases": [],
+      "related": [
+        1105,
+        1567,
+        1114
+      ]
     },
     {
       "id": 7473,
@@ -450,7 +749,12 @@
       ],
       "type": "Research",
       "summary": "What changes when success means more than placement?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7595,
+        7615,
+        7474
+      ]
     },
     {
       "id": 1122,
@@ -460,7 +764,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "What the Local Board and the Chief Local Elected Official are responsible for: composition, conflicts, firewalls, plans and oversight.",
       "aliases": []
     },
     {
@@ -472,14 +776,23 @@
         "participants"
       ],
       "type": "Collection",
-      "summary": "Find California implementation guidance, partner responses, national models, and a flexible action plan.",
+      "summary": "CalFresh work rules are expanding and Medi-Cal adds community engagement requirements. What California boards need to know and can do now.",
       "aliases": [
         "HR1",
         "H.R. 1",
         "work requirements",
         "SNAP",
         "CalFresh",
-        "Medi-Cal"
+        "Medi-Cal",
+        "ABAWD",
+        "community engagement",
+        "benefits"
+      ],
+      "related": [
+        7839,
+        7802,
+        1468,
+        7801
       ]
     },
     {
@@ -490,10 +803,14 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "ETPL reciprocity, out-of-state training, online-only provider routing",
+      "summary": "Route training located outside California, or an online provider with no California location, to the right ETPL path.",
       "aliases": [
         "ITA",
         "individual training account"
+      ],
+      "related": [
+        7544,
+        7551
       ]
     },
     {
@@ -505,9 +822,14 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "ETPL All Student performance reporting, data correction, privacy",
+      "summary": "Help a training provider complete annual ETPL All Student performance reporting or correct the data behind it, while protecting privacy.",
       "aliases": [
         "eligible training provider list"
+      ],
+      "related": [
+        7537,
+        7545,
+        7535
       ]
     },
     {
@@ -523,8 +845,16 @@
         "performance"
       ],
       "type": "Example",
-      "summary": "Examine a documented approach and consider what may fit your local area.",
-      "aliases": []
+      "summary": "Documented failure modes and redesign lessons, so your board can learn from difficulty without repeating it.",
+      "aliases": [
+        "lessons learned",
+        "what went wrong"
+      ],
+      "related": [
+        3851,
+        6546,
+        6554
+      ]
     },
     {
       "id": 1574,
@@ -535,8 +865,18 @@
         "partners"
       ],
       "type": "Quickstart",
-      "summary": "Move from a shared employer problem to a first accountable action.",
-      "aliases": []
+      "summary": "Organize employers and partners around a shared workforce problem, or reset a partnership that has become a recurring meeting.",
+      "aliases": [
+        "employer engagement",
+        "industry partnership",
+        "sector strategy"
+      ],
+      "related": [
+        6554,
+        1454,
+        7585,
+        7584
+      ]
     },
     {
       "id": 1464,
@@ -546,8 +886,13 @@
         "participants"
       ],
       "type": "Quickstart",
-      "summary": "Youth work experience",
-      "aliases": []
+      "summary": "Build a Youth work experience that advances the youth’s education and employment plan, not just a placement at a worksite.",
+      "aliases": [],
+      "related": [
+        1116,
+        2642,
+        1453
+      ]
     },
     {
       "id": 1468,
@@ -557,8 +902,19 @@
         "partners"
       ],
       "type": "Quickstart",
-      "summary": "AJCC partner integration / MOU / IFA / customer handoffs",
-      "aliases": []
+      "summary": "When the partner agreement, shared costs or actual customer handoff no longer match how the AJCC works: restore access first, then fix the agreement.",
+      "aliases": [
+        "referral",
+        "MOU",
+        "IFA",
+        "partners"
+      ],
+      "related": [
+        1115,
+        1433,
+        7594,
+        7619
+      ]
     },
     {
       "id": 1104,
@@ -568,7 +924,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "How WIOA monitoring finds problems early: risk assessment, annual reviews, findings, corrective action, questioned costs and audits.",
       "aliases": []
     },
     {
@@ -584,8 +940,18 @@
         "performance"
       ],
       "type": "Example",
-      "summary": "Explore practices from other states, their evidence, and what California boards could adapt.",
-      "aliases": []
+      "summary": "Selected practices from other states, with their evidence, translated into choices California boards can investigate, adapt or test.",
+      "aliases": [
+        "promising practices",
+        "innovation",
+        "other states",
+        "national models"
+      ],
+      "related": [
+        3851,
+        6547,
+        7585
+      ]
     },
     {
       "id": 6555,
@@ -596,7 +962,12 @@
       ],
       "type": "Research",
       "summary": "How can job quality influence actual investments?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7617,
+        1436,
+        7473
+      ]
     },
     {
       "id": 7594,
@@ -606,8 +977,13 @@
         "partners"
       ],
       "type": "Tool & reference",
-      "summary": "Find out what happened after a referral, including the cases still pending or unknown.",
-      "aliases": []
+      "summary": "A referral can look complete on a dashboard long before anyone gets help. Find out what happened after the handoff.",
+      "aliases": [],
+      "related": [
+        7619,
+        1468,
+        1115
+      ]
     },
     {
       "id": 1105,
@@ -617,8 +993,13 @@
         "performance"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "How eligibility, services, exits, credentials, skill gains and wages become the performance numbers boards are judged by.",
+      "aliases": [],
+      "related": [
+        1391,
+        1434,
+        1567
+      ]
     },
     {
       "id": 1395,
@@ -628,8 +1009,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Board agenda items, authority, fiscal impact, public meeting process",
-      "aliases": []
+      "summary": "Turn a staff issue into a clear board decision, with the requested action, authority, fiscal impact and risk easy to see.",
+      "aliases": [],
+      "related": [
+        1122,
+        1429,
+        1467
+      ]
     },
     {
       "id": 1566,
@@ -639,8 +1025,15 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Monitoring and audit readiness",
-      "aliases": []
+      "summary": "Get ready for EDD, DOL or audit review by organizing records, testing controls and assigning owners before the review begins.",
+      "aliases": [
+        "audit"
+      ],
+      "related": [
+        1104,
+        1392,
+        1197
+      ]
     },
     {
       "id": 7535,
@@ -651,9 +1044,14 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "ETPL continued eligibility, performance, exemptions, relisting",
+      "summary": "Keep an existing ETPL program active through continued-eligibility review: reporting, performance measures, exemptions and relisting.",
       "aliases": [
         "eligible training provider list"
+      ],
+      "related": [
+        7536,
+        7543,
+        7549
       ]
     },
     {
@@ -665,8 +1063,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Procurement and provider selection",
-      "aliases": []
+      "summary": "Define the need, choose the lawful acquisition or award path, run a fair selection and document the decision.",
+      "aliases": [],
+      "related": [
+        1393,
+        1106,
+        2640
+      ]
     },
     {
       "id": 1114,
@@ -676,8 +1079,12 @@
         "participants"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "Where WIOA policy becomes a customer experience: eligibility, assessment, service planning, training, supports, CalJOBS, exit and follow-up.",
+      "aliases": [
+        "eligibility",
+        "case manager",
+        "qualify"
+      ]
     },
     {
       "id": 7549,
@@ -687,7 +1094,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "ETPL provider lifecycle, readiness, office hours, data quality, technical assistance, and oversight",
+      "summary": "Run a healthy provider portfolio all year, not only when an application, renewal or problem arrives.",
       "aliases": []
     },
     {
@@ -698,8 +1105,17 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "Reading WIOA performance reports, goals, adjusted levels, scores, cohorts, and data quality",
-      "aliases": []
+      "summary": "Before reacting to a red number, diagnose the result, the benchmark, the population and the data.",
+      "aliases": [
+        "performance",
+        "outcomes",
+        "negotiated goals"
+      ],
+      "related": [
+        1105,
+        1434,
+        1567
+      ]
     },
     {
       "id": 1467,
@@ -709,8 +1125,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "WDB financial reporting and fiscal management",
-      "aliases": []
+      "summary": "Reconcile allocation, budget, commitments, spending, forecast and risk into one story the board can follow.",
+      "aliases": [],
+      "related": [
+        2639,
+        1431,
+        939
+      ]
     },
     {
       "id": 7537,
@@ -720,8 +1141,13 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "ETP Report error resolution, provider correction, State-side escalation",
-      "aliases": []
+      "summary": "Trace, correct, verify and escalate an ETP Report error that EDD has sent to the local ETPL coordinator.",
+      "aliases": [],
+      "related": [
+        7536,
+        7545,
+        7543
+      ]
     },
     {
       "id": 1465,
@@ -731,8 +1157,18 @@
         "employers"
       ],
       "type": "Quickstart",
-      "summary": "Rapid Response",
-      "aliases": []
+      "summary": "Organize a fast, coordinated response to a layoff or closure that shortens the time between disruption and reemployment.",
+      "aliases": [
+        "layoff",
+        "closure",
+        "WARN",
+        "layoff aversion"
+      ],
+      "related": [
+        1454,
+        941,
+        1558
+      ]
     },
     {
       "id": 1392,
@@ -742,8 +1178,16 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Monitoring findings and corrective action",
-      "aliases": []
+      "summary": "Test whether a finding is supported and material, and whether the corrective action will fix the underlying problem.",
+      "aliases": [
+        "audit",
+        "corrective action"
+      ],
+      "related": [
+        1104,
+        1566,
+        1197
+      ]
     },
     {
       "id": 7534,
@@ -753,10 +1197,15 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "ETPL new program review, program facts, new-program performance pathway",
+      "summary": "Review a new program from a provider that is already on the California ETPL.",
       "aliases": [
         "ITA",
         "individual training account"
+      ],
+      "related": [
+        7544,
+        7545,
+        7535
       ]
     },
     {
@@ -767,10 +1216,19 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "ETPL initial eligibility, new provider review, operating authority, CalJOBS, EDD handoff",
+      "summary": "Review an organization’s first ETPL application: routing, eligibility, operating authority, CalJOBS entry and the EDD handoff.",
       "aliases": [
         "ITA",
-        "individual training account"
+        "individual training account",
+        "eligible training provider list",
+        "new provider",
+        "provider application"
+      ],
+      "related": [
+        7544,
+        7550,
+        7546,
+        7545
       ]
     },
     {
@@ -782,8 +1240,13 @@
         "performance"
       ],
       "type": "Quickstart",
-      "summary": "Participant file review and source documentation",
-      "aliases": []
+      "summary": "Check whether a participant file tells one consistent story from eligibility through services, payments, data, exit and outcomes.",
+      "aliases": [],
+      "related": [
+        1198,
+        1197,
+        1566
+      ]
     },
     {
       "id": 1466,
@@ -794,8 +1257,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Provider invoices and contract modifications",
-      "aliases": []
+      "summary": "Connect an invoice or a request to move money, change scope or extend a contract back to the agreement, performance and approval authority.",
+      "aliases": [],
+      "related": [
+        1106,
+        1570,
+        2639
+      ]
     },
     {
       "id": 7538,
@@ -805,9 +1273,14 @@
         "training"
       ],
       "type": "Quickstart",
-      "summary": "Registered Apprenticeship ETPL pathway, listing, recruiting, capacity",
+      "summary": "Use the special California ETPL pathway when a Registered Apprenticeship sponsor asks about listing.",
       "aliases": [
         "eligible training provider list"
+      ],
+      "related": [
+        2642,
+        6552,
+        7544
       ]
     },
     {
@@ -819,7 +1292,12 @@
       ],
       "type": "Research",
       "summary": "What makes access work across long distances and smaller communities?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        1115,
+        1433,
+        3851
+      ]
     },
     {
       "id": 6554,
@@ -831,7 +1309,12 @@
       ],
       "type": "Research",
       "summary": "How do boards turn sector meetings into real employer action?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        1574,
+        7585,
+        1436
+      ]
     },
     {
       "id": 7551,
@@ -841,7 +1324,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Federal, California, local ETPL, participant-training, and operating-practice authority separation",
+      "summary": "See which layer of authority controls an ETPL decision, before a local habit is mistaken for a State rule.",
       "aliases": []
     },
     {
@@ -853,7 +1336,12 @@
       ],
       "type": "Research",
       "summary": "How can systems plan for participant stability?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        1557,
+        7595,
+        1114
+      ]
     },
     {
       "id": 7617,
@@ -865,7 +1353,12 @@
       ],
       "type": "Example",
       "summary": "A scheduling experiment asks whether better predictability can also work for business.",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        6555,
+        6551,
+        7584
+      ]
     },
     {
       "id": 7615,
@@ -876,7 +1369,12 @@
       ],
       "type": "Example",
       "summary": "What happens when a workforce program keeps working after someone gets hired?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7473,
+        1394,
+        6551
+      ]
     },
     {
       "id": 7475,
@@ -887,7 +1385,12 @@
       ],
       "type": "Research",
       "summary": "How can WDBs help employers change hiring itself?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        6551,
+        1394,
+        7617
+      ]
     },
     {
       "id": 1195,
@@ -897,7 +1400,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Anticipate work cycles and verify dates against current sources.",
+      "summary": "The July–June rhythm of budgets, contracts, monitoring, reporting and board actions, so deadlines stop arriving as emergencies.",
       "aliases": []
     },
     {
@@ -909,7 +1412,12 @@
       ],
       "type": "Example",
       "summary": "What happens between a first conversation and an employer actually changing how it trains?",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7584,
+        6551,
+        1574
+      ]
     },
     {
       "id": 1124,
@@ -919,7 +1427,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "How WIOA training choices work: ITAs, ETPL, customer choice, career pathways, apprenticeship, OJT and credentials.",
       "aliases": [
         "ITA",
         "individual training account"
@@ -933,7 +1441,7 @@
         "training"
       ],
       "type": "Tool & reference",
-      "summary": "Training quality, performance evidence, consumer choice, and participant fit",
+      "summary": "ETPL eligibility says a program may be listed. This lens asks whether it works, and whether it fits this person.",
       "aliases": [
         "ITA",
         "individual training account"
@@ -947,8 +1455,13 @@
         "oversight"
       ],
       "type": "Quickstart",
-      "summary": "Policy implementation",
-      "aliases": []
+      "summary": "Move a new WSD, TEGL, WSIN or law from “we read it” to an implementation plan with owners, deadlines and procedure changes.",
+      "aliases": [],
+      "related": [
+        1568,
+        942,
+        1194
+      ]
     },
     {
       "id": 1194,
@@ -958,7 +1471,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Separate controlling requirements from local discretion.",
+      "summary": "When someone says “WIOA requires it” or “EDD won’t allow it,” trace the decision to the level of authority that actually controls it.",
       "aliases": []
     },
     {
@@ -969,7 +1482,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "When the facts are unusual or the authority is unclear: who to involve, from your supervisor and fiscal team to legal, the board or EDD.",
       "aliases": []
     },
     {
@@ -981,7 +1494,12 @@
       ],
       "type": "Example",
       "summary": "A referral is a start. The harder question is whether someone actually connects.",
-      "aliases": []
+      "aliases": [],
+      "related": [
+        7594,
+        1468,
+        1115
+      ]
     },
     {
       "id": 1116,
@@ -991,8 +1509,13 @@
         "participants"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "WIOA Youth has its own eligibility, service strategy, 14 program elements, work-experience rules and follow-up.",
+      "aliases": [
+        "youth",
+        "young adult",
+        "out of school",
+        "in school"
+      ]
     },
     {
       "id": 943,
@@ -1002,8 +1525,12 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
-      "aliases": []
+      "summary": "Plain-language definitions of the acronyms, funding terms and program language used across California’s workforce system.",
+      "aliases": [
+        "glossary",
+        "acronyms",
+        "terms"
+      ]
     },
     {
       "id": 1125,
@@ -1013,7 +1540,7 @@
         "oversight"
       ],
       "type": "Tool & reference",
-      "summary": "Use this reference to frame the question and choose your next step.",
+      "summary": "Two-minute decision aids for eligibility, service approval, fiscal decisions, procurement, performance, monitoring and Youth.",
       "aliases": []
     },
     {
@@ -1024,7 +1551,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "A beginner’s map of the agencies, boards, job centers, providers and partners that make up California’s workforce system.",
       "aliases": []
     },
     {
@@ -1035,7 +1562,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "How Wagner-Peyser, CETA, JTPA, WIA and WIOA built today’s system in layers, and why it looks so complicated.",
       "aliases": []
     },
     {
@@ -1046,7 +1573,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "WIOA funding flow, allowable costs, procurement, obligations, expenditures",
+      "summary": "Who appropriates workforce money, who receives it, who decides how it is used and who spends it on services.",
       "aliases": []
     },
     {
@@ -1057,7 +1584,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Authority hierarchy, federal guidance, EDD Directives, Information Notices, local policy / Federal",
+      "summary": "Laws, regulations, TEGLs, EDD directives, information notices and local policy do not carry the same weight. Learn to tell them apart.",
       "aliases": []
     },
     {
@@ -1068,7 +1595,7 @@
         "participants"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Follow one job seeker from first contact through career services, training, employment and follow-up.",
       "aliases": []
     },
     {
@@ -1079,7 +1606,7 @@
         "employers"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "How employers use the workforce system for recruitment, training, layoffs and talent development.",
       "aliases": []
     },
     {
@@ -1090,7 +1617,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Separate four kinds of work: who governs, who coordinates, who delivers and who partners.",
       "aliases": []
     },
     {
@@ -1101,8 +1628,11 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
-      "aliases": []
+      "summary": "A mental model for WIOA: its four titles, the Title I programs, how services work and where federal, state and local decisions fit.",
+      "aliases": [
+        "WIOA",
+        "beginner"
+      ]
     },
     {
       "id": 1193,
@@ -1112,7 +1642,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Realistic cases on training, case management, Youth, performance, monitoring and governance. Choose a response, then compare your reasoning.",
       "aliases": []
     },
     {
@@ -1123,7 +1653,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Twelve realistic decisions and a capstone that test whether you can recognize the question and know what to do next.",
       "aliases": []
     },
     {
@@ -1139,8 +1669,19 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Understand the people, programs, funding, and rules behind California’s workforce system.",
-      "aliases": []
+      "summary": "Eight lessons on the people, programs, funding and rules behind California’s workforce system. Start here if you are new.",
+      "aliases": [
+        "new to workforce",
+        "beginner",
+        "onboarding",
+        "introduction"
+      ],
+      "related": [
+        937,
+        936,
+        943,
+        1427
+      ]
     },
     {
       "id": 1427,
@@ -1155,8 +1696,18 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Explore 16 lessons on running, managing, and improving the workforce system.",
-      "aliases": []
+      "summary": "Sixteen modules on running, managing and improving the system: governance, money, services, employers, performance and partnerships.",
+      "aliases": [
+        "advanced",
+        "manager",
+        "director"
+      ],
+      "related": [
+        1429,
+        1434,
+        2645,
+        1210
+      ]
     },
     {
       "id": 2642,
@@ -1166,7 +1717,7 @@
         "training"
       ],
       "type": "Course",
-      "summary": "OJT, IWT, youth work experience, transitional jobs, pre-apprenticeship, Registered Apprenticeship",
+      "summary": "OJT, IWT, youth work experience, transitional jobs, pre-apprenticeship and apprenticeship are not interchangeable. Match the model to the problem.",
       "aliases": []
     },
     {
@@ -1177,7 +1728,7 @@
         "employers"
       ],
       "type": "Course",
-      "summary": "Employer services, OJT, IWT, apprenticeship, Rapid Response, sector strategy, business engagement",
+      "summary": "Employer services as problem-solving: diagnose the business need, then choose recruitment, OJT, IWT, apprenticeship or layoff aversion.",
       "aliases": []
     },
     {
@@ -1188,7 +1739,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "WIOA performance accountability, cohorts, measures, data validation, statistical adjustment, and management interpretation",
+      "summary": "How participant data becomes reported outcomes, negotiated goals and performance scores.",
       "aliases": []
     },
     {
@@ -1199,7 +1750,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Connect labor-market evidence, employers, workers and training capacity to the board’s investment decisions.",
       "aliases": []
     },
     {
@@ -1210,7 +1761,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Accountability beyond monitoring: internal controls, equal opportunity, privacy, corrective action and escalation.",
       "aliases": []
     },
     {
@@ -1221,7 +1772,7 @@
         "partners"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "No board controls the whole talent system. How to lead across education, economic development, human services and employers.",
       "aliases": []
     },
     {
@@ -1232,7 +1783,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Notice friction, test changes, learn from customers and employers, and make improvement part of normal work.",
       "aliases": []
     },
     {
@@ -1243,7 +1794,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Local Board, CLEO, staff, operator, provider, delegation, conflicts, open meetings",
+      "summary": "Who actually has authority in a local workforce area, so decisions land with the board, the CLEO, staff or providers as they should.",
       "aliases": []
     },
     {
@@ -1254,7 +1805,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "The overlapping clocks of a local area: funding, contracts, board decisions, monitoring, performance and planning.",
       "aliases": []
     },
     {
@@ -1265,7 +1816,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Follow workforce funding from award to budget, obligation, expenditure, cash and closeout.",
       "aliases": []
     },
     {
@@ -1276,7 +1827,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Fiscal management",
+      "summary": "Connect allocations, carry-in, commitments, spending and forecasts so financial reports support decisions.",
       "aliases": []
     },
     {
@@ -1287,7 +1838,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Procurement, contracts, and subawards",
+      "summary": "Choose the right relationship, use a defensible process and manage the agreement from award through closeout.",
       "aliases": []
     },
     {
@@ -1298,7 +1849,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "How strategy and funding become services through providers, operators, agreements, oversight and closeout.",
       "aliases": []
     },
     {
@@ -1309,7 +1860,7 @@
         "partners"
       ],
       "type": "Course",
-      "summary": "AJCC system roles, partner access, operator coordination, MOU/IFA, referrals, and certification",
+      "summary": "How AJCC operators, partners, agreements, referrals, accessibility and certification fit together.",
       "aliases": []
     },
     {
@@ -1320,7 +1871,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "WIOA Title I Adult, Dislocated Worker, and Youth program operations from eligibility through services and outcomes",
+      "summary": "How Adult, Dislocated Worker and Youth move from eligibility to services, training, supports and outcomes, and where they differ.",
       "aliases": []
     },
     {
@@ -1332,7 +1883,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Training strategy, labor-market alignment, ETPL, provider quality, access, career pathways, portfolio strategy",
+      "summary": "Connect individual training decisions and the wider training portfolio to labor-market evidence, customer choice and access.",
       "aliases": [
         "ITA",
         "individual training account"
@@ -1346,7 +1897,7 @@
         "oversight"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "One local area, one operating year, eight connected decisions. A capstone that tests how you reason under changing facts.",
       "aliases": []
     },
     {
@@ -1357,10 +1908,48 @@
         "training"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "A task-first onboarding path for new ETPL coordinators, backups and managers: real workflows, current sources and when to ask for help.",
       "aliases": [
         "eligible training provider list"
+      ],
+      "related": [
+        7531,
+        7547,
+        7544,
+        7546
       ]
+    }
+  ],
+  "types": [
+    {
+      "id": "Quickstart",
+      "label": "Quickstart",
+      "what": "Step-by-step help with a specific decision or task."
+    },
+    {
+      "id": "Tool & reference",
+      "label": "Tool & reference",
+      "what": "Desk aids, workbooks and plain-language references to keep open while you work."
+    },
+    {
+      "id": "Collection",
+      "label": "Desk",
+      "what": "Organized support for a role or a recurring responsibility."
+    },
+    {
+      "id": "Course",
+      "label": "Learning",
+      "what": "Lessons and courses that build knowledge over time."
+    },
+    {
+      "id": "Research",
+      "label": "Deep dive",
+      "what": "What the evidence suggests about a hard practice question."
+    },
+    {
+      "id": "Example",
+      "label": "Example",
+      "what": "Transferable lessons from real workforce systems."
     }
   ]
 }
