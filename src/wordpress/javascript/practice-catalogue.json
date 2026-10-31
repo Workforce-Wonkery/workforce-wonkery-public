@@ -211,7 +211,7 @@
         "performance"
       ],
       "type": "Example",
-      "summary": "Examine a documented approach and consider what may fit your local area.",
+      "summary": "Browse documented local approaches by topic, workforce board, or region.",
       "aliases": []
     },
     {
@@ -399,7 +399,7 @@
         "training"
       ],
       "type": "Collection",
-      "summary": "Focused help for complex California roles. Start with the ETPL Coordinator Desk.",
+      "summary": "Learn the role, handle provider tasks, and find current California guidance.",
       "aliases": [
         "eligible training provider list"
       ]
@@ -465,14 +465,14 @@
     },
     {
       "id": 7861,
-      "title": "H.R. 1 Work Requirements: California WDB Implementation Desk",
+      "title": "H.R. 1 Work Requirements",
       "url": "https://workforcewonkery.com/practice/hr1-work-requirements-california-wdb/",
       "topics": [
         "partners",
         "participants"
       ],
       "type": "Collection",
-      "summary": "A statewide WDB guide to CalFresh and Medi-Cal rules, practical partner responses, national models, and a flexible 90-day plan.",
+      "summary": "Find California implementation guidance, partner responses, national models, and a flexible action plan.",
       "aliases": [
         "HR1",
         "H.R. 1",
@@ -584,7 +584,7 @@
         "performance"
       ],
       "type": "Example",
-      "summary": "Examine a documented approach and consider what may fit your local area.",
+      "summary": "Explore practices from other states, their evidence, and what California boards could adapt.",
       "aliases": []
     },
     {
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 1210,
-      "title": "Workforce Foundations: The Foundations Course",
+      "title": "Foundations Course",
       "url": "https://workforcewonkery.com/practice/foundations/",
       "topics": [
         "participants",
@@ -1139,7 +1139,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Foundational workforce-system learning workforce system",
+      "summary": "Understand the people, programs, funding, and rules behind California’s workforce system.",
       "aliases": []
     },
     {
@@ -1155,7 +1155,7 @@
         "performance"
       ],
       "type": "Course",
-      "summary": "Build your understanding, or revisit this lesson for the work in front of you.",
+      "summary": "Explore 16 lessons on running, managing, and improving the workforce system.",
       "aliases": []
     },
     {
