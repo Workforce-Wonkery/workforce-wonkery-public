@@ -1,0 +1,19 @@
+name: Practice navigation acceptance
+on:
+  pull_request:
+    branches: [main]
+    paths: ['src/wordpress/**', 'tests/*practice*', '.github/workflows/practice-navigation.yml']
+permissions:
+  contents: read
+jobs:
+  practice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install playwright==1.63.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/practice_navigation_acceptance.py
