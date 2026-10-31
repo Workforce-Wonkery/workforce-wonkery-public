@@ -1,0 +1,137 @@
+{
+  "scope": "public-source static presentation only",
+  "results": [
+    {
+      "surface": "home",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "home",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "home",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "policy",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "policy",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "policy",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "data",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "data",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "data",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "practice",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "practice",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "practice",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "report",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "report",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "report",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "etpl",
+      "viewport": 1440,
+      "document_width": 1440,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "etpl",
+      "viewport": 768,
+      "document_width": 768,
+      "result": "PASS",
+      "issues": []
+    },
+    {
+      "surface": "etpl",
+      "viewport": 390,
+      "document_width": 390,
+      "result": "PASS",
+      "issues": []
+    }
+  ],
+  "failures": 0,
+  "limitations": [
+    "JavaScript is disabled; this test does not verify interactive behavior.",
+    "WordPress block rendering, remote imagery, and private publication records are not simulated.",
+    "Live site and approved private publication checks remain separate."
+  ]
+}

@@ -14,46 +14,42 @@ def link(id):
  r=next(r for r in data['resources'] if r['id']==id)
  return '<article><h3><a href="'+E(r['url'])+'">'+E(r['title'])+'</a></h3><p>'+E(r['summary'])+'</p></article>'
 search='<form action="/practice/tools/" method="get"><label for="practice-home-q">What are you working on?</label><div class="search-row"><input id="practice-home-q" type="search" name="q" placeholder="Try training approval, employer engagement, or CalFresh"><button>Search Practice</button></div></form>'
-# Reuse the owner-approved Practice imagery while retaining the task-first directory.
+# The hero reuses the owner-approved Practice photo at its native 2172x724 size, aligned with the Policy and Data heroes.
+# Supporting card images were removed: they were ~410px mockup crops upscaled 4x and rendered blurry.
 media='https://workforcewonkery.com/wp-content/uploads/2026/09/'
 home_style='''<style>
-#ww-practice-v2.practice-home{padding-top:0}
-#ww-practice-v2 .practice-hero{position:relative;isolation:isolate;min-height:470px;display:flex;align-items:center;margin:0 calc(-1 * max(24px, (100vw - 1200px)/2));padding:64px max(24px,calc((100vw - 1200px)/2));overflow:hidden}
-#ww-practice-v2 .practice-hero-image{position:absolute;z-index:-2;right:0;top:0;width:65%;height:100%;object-fit:cover;object-position:center}
-#ww-practice-v2 .practice-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#fcfaf6 0%,#fcfaf6 39%,rgba(252,250,246,.94) 44%,rgba(252,250,246,.64) 48%,rgba(252,250,246,.16) 54%,rgba(252,250,246,0) 61%)}
-#ww-practice-v2 .practice-hero-copy{max-width:510px;width:44%}
-#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,4.5vw,64px)!important}
-#ww-practice-v2 .practice-hero .intro{font-size:22px;line-height:1.45}
-#ww-practice-v2 .practice-hero .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:16px}
+#ww-practice-v2.practice-home{padding-top:0;margin-top:0}
+#ww-practice-v2 .practice-hero{position:relative;isolation:isolate;min-height:18.78vw;display:flex;align-items:center;margin:0 calc(-1 * max(24px, (100vw - 1200px)/2));padding:clamp(26px,2.4vw,44px) max(24px,calc((100vw - 1200px)/2));overflow:hidden;background:#fcfaf6;border-bottom:1px solid #eee9de}
+#ww-practice-v2 .practice-hero-image{position:absolute;z-index:-2;right:0;top:0;width:63%;max-width:none;height:100%;object-fit:cover;object-position:center 38%}
+#ww-practice-v2 .practice-hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#fcfaf6 0%,#fcfaf6 31%,rgba(252,250,246,.98) 38%,rgba(252,250,246,.84) 45%,rgba(252,250,246,.42) 53%,rgba(252,250,246,0) 65%)}
+#ww-practice-v2 .practice-hero-copy{width:50%;max-width:620px}
+#ww-practice-v2 .practice-hero .eyebrow{display:block;color:#986714;font:600 clamp(11px,.72vw,15px)/1.5 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 clamp(12px,1.1vw,20px)}
+#ww-practice-v2 .practice-hero h1{font-size:clamp(56px,5.1vw,94px)!important;line-height:.98!important;letter-spacing:-.052em!important;margin:0 0 clamp(16px,1.4vw,26px)!important;white-space:nowrap}
+#ww-practice-v2 .practice-hero .intro{font:clamp(19px,1.45vw,28px)/1.42 Georgia,'Times New Roman',serif;color:#1d3546;max-width:30em;margin:0;text-wrap:pretty}
 #ww-practice-v2 .practice-home-search{padding-top:8px}
-#ww-practice-v2 .collection-image{display:block;width:100%;height:220px;object-fit:cover;margin-bottom:20px}
-#ww-practice-v2 .learning-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-#ww-practice-v2 .learning-image{display:block;width:100%;height:330px;object-fit:cover}
-#ww-practice-v2 .learning-links{display:grid;gap:24px}
-#ww-practice-v2 .learning-links p{margin-bottom:0}
+@media(max-width:1000px){
+#ww-practice-v2 .practice-hero-copy{width:55%}
+#ww-practice-v2 .practice-hero:after{background:linear-gradient(90deg,#fcfaf6 0%,#fcfaf6 39%,rgba(252,250,246,.94) 45%,rgba(252,250,246,.7) 52%,rgba(252,250,246,.3) 60%,rgba(252,250,246,0) 70%)}
+#ww-practice-v2 .practice-hero h1{white-space:normal}
+}
 @media(max-width:900px){
-#ww-practice-v2 .practice-hero{min-height:0;display:block;padding-top:0;padding-bottom:32px;overflow:visible}
-#ww-practice-v2 .practice-hero-image{position:relative;width:calc(100% + 48px);max-width:none;height:280px;margin:0 -24px 28px;object-position:center 45%}
+#ww-practice-v2 .practice-hero{min-height:0;display:block;padding:0 24px 24px;border-bottom:0}
+#ww-practice-v2 .practice-hero-image{position:relative;display:block;width:calc(100% + 48px);height:220px;margin:0 -24px 26px;object-position:center 35%}
 #ww-practice-v2 .practice-hero:after{display:none}
-#ww-practice-v2 .practice-hero-copy{width:100%;max-width:680px}
-#ww-practice-v2 .practice-hero h1{font-size:clamp(42px,7vw,60px)!important}
-#ww-practice-v2 .learning-layout{gap:24px}
+#ww-practice-v2 .practice-hero-copy{width:100%;max-width:none}
+#ww-practice-v2 .practice-hero .eyebrow{font-size:11px;margin-bottom:9px}
+#ww-practice-v2 .practice-hero h1{font-size:44px!important;line-height:1.03!important;margin-bottom:12px!important}
+#ww-practice-v2 .practice-hero .intro{font-size:19px}
 }
 @media(max-width:640px){
-#ww-practice-v2 .practice-hero{margin:0 -20px;padding:0 20px 12px}
-#ww-practice-v2 .practice-hero-image{width:calc(100% + 40px);margin:0 -20px 28px;height:210px}
-#ww-practice-v2 .practice-hero .intro{font-size:21px}
-#ww-practice-v2 .collection-image{height:210px;margin-bottom:16px}
-#ww-practice-v2 .learning-layout{grid-template-columns:1fr}
-#ww-practice-v2 .learning-image{height:240px}
+#ww-practice-v2 .practice-hero{margin:0 -20px;padding:0 20px 20px}
+#ww-practice-v2 .practice-hero-image{width:calc(100% + 40px);margin:0 -20px 22px}
 }
 </style>'''
-def image(name,cls,eager=False):
- return '<img class="'+cls+'" src="'+media+name+'" alt="" width="1600" height="900" '+('fetchpriority="high"' if eager else 'loading="lazy"')+' decoding="async">'
-def illustrated_link(id,name):
- return link(id).replace('<article>','<article>'+image(name,'collection-image'),1)
-hero='<header class="practice-hero" aria-labelledby="wwp-practice-title">'+image('golden_hour_office_collaboration_with_la_skyline.png','practice-hero-image',True)+'<div class="practice-hero-copy"><p class="eyebrow">From practice to progress</p><h1 id="wwp-practice-title">Practice <span>Decoded.</span></h1><p class="intro">A question on your desk. A decision to make. Find practical guidance, learn from other workforce boards, and build the knowledge behind the work.</p></div></header>'
-body=home_style+hero+'<div class="practice-home-search">'+search+'</div><section id="wwp-practice-paths"><h2>Browse by the work you do</h2>'+tiles()+'</section><section id="wwp-desk-aids"><h2>Focused help for complex work</h2><div class="collection-grid">'+illustrated_link(7531,'practice-card-build-upscaled.png')+illustrated_link(7861,'practice-card-solve-upscaled.png')+'</div></section><section><h2>Learn the system. Strengthen your practice.</h2><p>New to workforce development? Start with Foundations. Ready to go deeper? Explore the decisions and tradeoffs in Workforce in Practice.</p><div class="learning-layout">'+image('practice-card-learn-upscaled.png','learning-image')+'<div class="learning-links">'+link(1210)+link(1427)+'</div></div></section><section id="wwp-deep-dives"><h2>Worth exploring</h2><div class="collection-grid">'+link(7594)+link(7584)+link(3851)+link(6546)+'</div><p><a href="/practice/tools/">Browse all resources →</a></p></section>'
+def image(name,cls,width,height,eager=False):
+ return '<img class="'+cls+'" src="'+media+name+'" alt="" width="'+str(width)+'" height="'+str(height)+'" '+('fetchpriority="high"' if eager else 'loading="lazy"')+' decoding="async">'
+hero='<header class="practice-hero" aria-labelledby="wwp-practice-title">'+image('golden_hour_office_collaboration_with_la_skyline.png','practice-hero-image',2172,724,True)+'<div class="practice-hero-copy"><p class="eyebrow">From practice to progress</p><h1 id="wwp-practice-title">Practice <span>Decoded.</span></h1><p class="intro">A question on your desk. A decision to make. Find practical guidance, learn from other workforce boards, and build the knowledge behind the work.</p></div></header>'
+body=home_style+hero+'<div class="practice-home-search">'+search+'</div><section id="wwp-practice-paths"><h2>Browse by the work you do</h2>'+tiles()+'</section><section id="wwp-desk-aids"><h2>Focused help for complex work</h2><div class="collection-grid">'+link(7531)+link(7861)+'</div></section><section><h2>Learn the system. Strengthen your practice.</h2><p>New to workforce development? Start with Foundations. Ready to go deeper? Explore the decisions and tradeoffs in Workforce in Practice.</p><div class="collection-grid">'+link(1210)+link(1427)+'</div></section><section id="wwp-deep-dives"><h2>Worth exploring</h2><div class="collection-grid">'+link(7594)+link(7584)+link(3851)+link(6546)+'</div><p><a href="/practice/tools/">Browse all resources →</a></p></section>'
 (S/'templates/practice-editorial-v2.html').write_text(wrap(body).replace('class="ww-practice-library"','class="ww-practice-library practice-home"',1))
 for filename,title,default,extra in [('practice-resource-directory.html','Find the resource for your next step.','',''),('practice-topic-library.html','Start with the work in front of you.','',tiles()),('practice-quickstarts.html','Quickstarts','Quickstart','')]:
  options='<option value="">All topics</option>'+''.join('<option value="'+t['id']+'">'+E(t['title'])+'</option>' for t in data['topics'])
