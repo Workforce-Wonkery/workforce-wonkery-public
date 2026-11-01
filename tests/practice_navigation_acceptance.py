@@ -17,7 +17,7 @@ def run():
     if '/quickstarts/quickstart-' in path:
      name=None
     content=(S/'templates'/name).read_text() if name else '<h1>Approve a Training Request</h1><p>Detail page stand-in.</p>'
-    body='<style>body{margin:0}</style><style>'+(S/'css/practice-navigation.css').read_text()+'</style><main><div class="wp-block-post-content">'+content+'</div></main><script type="application/json" id="ww-practice-catalogue">'+json.dumps(data)+'</script><script>'+(S/'javascript/practice-navigation.js').read_text()+'</script>'
+    body='<style>body{margin:0}</style><style>'+(S/'css/practice-navigation.css').read_text()+'</style><main><div class="wp-block-post-content">'+content+'</div></main><script type="application/json" id="ww-practice-data">'+json.dumps(data)+'</script><script>'+(S/'javascript/practice-navigation.js').read_text()+'</script>'
     route.fulfill(content_type='text/html',body='<!doctype html><meta name="viewport" content="width=device-width">'+body)
    page.route('**/*',serve)
    page.goto('https://workforcewonkery.com/practice/tools/?q=HR1')

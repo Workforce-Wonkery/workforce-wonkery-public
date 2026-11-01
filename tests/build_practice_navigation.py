@@ -5,7 +5,8 @@ Outputs (byte-for-byte reproducible):
   templates/practice-resource-directory.html All resources, page 1211 (/practice/tools/)
   templates/practice-topic-library.html      Topics, page 1212 (/practice/topics/)
   templates/practice-quickstarts.html        Quickstarts, page 1387
-  template-parts/header-editorial-blocks.html Practice-only navigation fragment appended to the global header
+  template-parts/footer-editorial-blocks.html Practice runtime (navigation, catalogue, search) appended to the global footer;
+                                              the header carries no Practice code
 
 Editorial content (summaries, topic guides, related links, type labels) lives in
 javascript/practice-catalogue.json. Change the catalogue, then rerun this script.
@@ -247,27 +248,8 @@ def directory_form():
             '<p class="actions"><button>Find resources</button> <button type="button" class="secondary" data-reset>Clear filters</button></p></form>')
 
 
-def resource_rows():
-    return ('<div class="resource-list" data-results>' + ''.join(
-        '<article class="resource" data-resource-id="' + str(r['id']) + '"><p class="meta"><span class="tag">' + E(label(r)) + '</span> '
-        + E(' · '.join(TOPICS[t]['title'] for t in r['topics']) if len(r['topics']) < len(TOPICS) else 'All topics')
-        + '</p><h3><a href="' + E(r['url']) + '">' + E(r['title']) + '</a></h3><p>' + E(r['summary']) + '</p></article>' for r in data['resources']) + '</div>')
-
-
 type_legend = ('<details class="type-legend"><summary>What the resource types mean</summary><dl>'
                + ''.join('<div><dt>' + E(t['label']) + '</dt><dd>' + E(t['what']) + '</dd></div>' for t in data['types']) + '</dl></details>')
-
-
-def topic_guide(t):
-    st = R[t['start']]
-    col = lambda title, note, ids: ('<div><h3>' + title + '</h3><p class="note">' + note + '</p><ul class="links">' + ''.join(item(i) for i in ids) + '</ul></div>') if ids else ''
-    return ('<section class="topic-guide" data-topic-guide="' + t['id'] + '" aria-label="' + E(t['title']) + ' guide" hidden>'
-            '<div class="tg-start"><p class="tag">Start here · ' + E(label(st)) + '</p><h2><a href="' + href(st) + '">' + E(st['title']) + '</a></h2><p>' + E(st['summary']) + '</p></div>'
-            '<div class="tg-cols">'
-            + col('Get a task done', 'Step-by-step help with a specific decision.', [i for i in t['tasks'] if i != t['start']])
-            + col('Keep at hand', 'References and tools to keep open while you work.', t['keep'])
-            + col('Build your knowledge', 'Lessons that explain the system behind the task.', t['learn'])
-            + '</div><div class="tg-ideas"><h3>Ideas worth borrowing</h3><ul class="links cols">' + ''.join(item(i) for i in t['ideas']) + '</ul></div></section>')
 
 
 def topic_overview():
@@ -290,29 +272,33 @@ for filename, crumb, title, intro, default, kind in HUBS:
     head = ('<header class="hub-head"><h1 id="practice-hub-title" data-hub-title>' + E(title) + '</h1><p class="intro" data-hub-intro>' + E(intro) + '</p></header>')
     extra = ''
     if kind == 'topics':
-        extra = topic_overview() + ''.join(topic_guide(t) for t in data['topics'])
+        extra = topic_overview() + '<div data-topic-guides></div>'
     results_head = ('<h2 class="results-title" data-results-title>' + ('Search all topics' if kind == 'topics' else 'Resources') + '</h2>')
     body = (head + extra + '<section class="hub-results" data-results-section aria-labelledby="practice-results-title">'
             + results_head.replace('<h2 class', '<h2 id="practice-results-title" class') + directory_form()
             + (type_legend if kind == 'directory' else '')
             + '<p role="status" aria-live="polite" class="status">' + str(N) + ' resources</p>'
             '<p data-empty hidden>No resources match. Try a shorter phrase, an acronym such as ITA or OJT, or clear a filter.</p>'
-            '<noscript><p>The complete resource list is below. Enable JavaScript to use search and filters, or use your browser’s Find command.</p></noscript>'
-            + resource_rows() + '</section>'
+            '<noscript><p>Search and the resource list need JavaScript. You can still browse every area of work from the <a href="/practice/">Practice home</a>.</p></noscript>'
+            '<div class="resource-list" data-results></div></section>'
             '<p class="muted">Each resource shows its review date, sources and evidence limits. Official sources and your local policy control. <a href="/trust/">Our trust standards</a>.</p>')
     (S / 'templates' / filename).write_text(wrap(body, 'practice-hub', 'data-practice-directory data-page="' + kind + '" data-default-type="' + default + '"'))
 
-# ---------------------------------------------------------------- Shared section navigation fragment
-# The global header remains the sole site header. The fragment adds Practice section navigation,
-# breadcrumbs, related resources and hub search. Only the editorial fields the browser needs are embedded.
+# ---------------------------------------------------------------- Shared Practice runtime (footer)
+# The Practice runtime lives at the end of the small global footer, not the large site header, so routine
+# catalogue and navigation updates touch one small template part. It adds section navigation, breadcrumbs,
+# related resources, hub lists, topic guides and search. Only the fields the browser needs are embedded.
 css = (S / 'css/practice-navigation.css').read_text()
 js = (S / 'javascript/practice-navigation.js').read_text()
 embed = {'version': data['version'], 'types': data['types'],
-         'topics': [{k: t[k] for k in ('id', 'title', 'summary', 'intro')} for t in data['topics']],
+         'topics': [{k: t[k] for k in ('id', 'title', 'summary', 'intro', 'start', 'tasks', 'keep', 'learn', 'ideas')} for t in data['topics']],
          'resources': data['resources']}
+MARK = re.compile(r'\n*<!-- PRACTICE NAVIGATION START -->[\s\S]*?<!-- PRACTICE NAVIGATION END -->\n?')
 header = S / 'template-parts/header-editorial-blocks.html'
-text = re.sub(r'\n*<!-- PRACTICE NAVIGATION START -->[\s\S]*?<!-- PRACTICE NAVIGATION END -->\n?', '', header.read_text()).rstrip('\n') + '\n'
-fragment = ('<!-- wp:html -->\n<style>' + css + '</style><script type="application/json" id="ww-practice-catalogue">'
+header.write_text(MARK.sub('', header.read_text()).rstrip('\n') + '\n')
+footer = S / 'template-parts/footer-editorial-blocks.html'
+base = MARK.sub('', footer.read_text()).rstrip('\n') + '\n'
+fragment = ('<!-- wp:html -->\n<style>' + css + '</style><script type="application/json" id="ww-practice-data">'
             + json.dumps(embed, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c') + '</script><script>' + js + '</script>\n<!-- /wp:html -->')
-header.write_text(text + '\n<!-- PRACTICE NAVIGATION START -->\n' + fragment + '\n<!-- PRACTICE NAVIGATION END -->\n')
-print('Built Practice home, topics, resource directory, Quickstarts, and shared section navigation.')
+footer.write_text(base + '\n<!-- PRACTICE NAVIGATION START -->\n' + fragment + '\n<!-- PRACTICE NAVIGATION END -->\n')
+print('Built Practice home, topics, resource directory, Quickstarts, and the shared Practice runtime in the footer.')
