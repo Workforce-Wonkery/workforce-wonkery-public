@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const kind=hub.dataset.page,list=hub.querySelector('[data-results]');
   // The list and topic guides are rendered from the one shared catalogue.
   data.resources.forEach(r=>list.append(make('article',{class:'resource','data-resource-id':String(r.id)},
-   make('p',{class:'meta'},make('span',{class:'tag'},typeLabel(r.type)),' '+(r.topics.length<ALL?r.topics.map(t=>topicOf(t).title).join(' · '):'All topics')),
+   make('p',{class:'meta'},make('span',{class:'tag'},typeLabel(r.type)),' '+(ALL>r.topics.length?r.topics.map(t=>topicOf(t).title).join(' · '):'All topics')),
    make('h3',{},link(r.title,r.url)),make('p',{},r.summary))));
   const guides=hub.querySelector('[data-topic-guides]');
   if(guides)data.topics.forEach(t=>{const st=byId.get(t.start);if(!st)return;
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const words=r=>new Set(normalize(r.title+' '+r.aliases.join(' ')).trim().split(' ').filter(w=>w.length>3&&!STOP.has(w)).map(stem));
   const mine=words(current);
   const curated=(current.related||[]).map(id=>byId.get(id)).filter(Boolean);
-  const scored=data.resources.filter(r=>r.id!==current.id&&!curated.includes(r)&&r.topics.length<ALL&&r.topics.some(t=>current.topics.includes(t)))
+  const scored=data.resources.filter(r=>r.id!==current.id&&!curated.includes(r)&&ALL>r.topics.length&&r.topics.some(t=>current.topics.includes(t)))
    .map((r,i)=>{const w=words(r);let shared=0;w.forEach(x=>{if(mine.has(x))shared++;});return{r,i,s:shared*2+r.topics.filter(t=>current.topics.includes(t)).length+(r.type!==current.type?1:0)+(r.topics[0]===current.topics[0]?1:0)};})
    .sort((a,b)=>b.s-a.s||a.i-b.i).map(x=>x.r);
   const picks=curated.concat(scored).slice(0,4);

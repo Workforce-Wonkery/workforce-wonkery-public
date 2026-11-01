@@ -290,6 +290,9 @@ for filename, crumb, title, intro, default, kind in HUBS:
 # related resources, hub lists, topic guides and search. Only the fields the browser needs are embedded.
 css = (S / 'css/practice-navigation.css').read_text()
 js = (S / 'javascript/practice-navigation.js').read_text()
+# WordPress treats '<' followed by a letter as the start of a tag when it renders template parts and
+# entity-encodes the '&&' that follows, which breaks inline JavaScript. Keep the runtime free of them.
+assert not re.search(r'<[A-Za-z!/?]', js), 'Inline Practice runtime must not contain "<" followed by a letter'
 embed = {'version': data['version'], 'types': data['types'],
          'topics': [{k: t[k] for k in ('id', 'title', 'summary', 'intro', 'start', 'tasks', 'keep', 'learn', 'ideas')} for t in data['topics']],
          'resources': data['resources']}
