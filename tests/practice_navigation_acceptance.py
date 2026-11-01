@@ -50,7 +50,7 @@ def run():
    urls={r['url'].replace('https://workforcewonkery.com',''):r for r in data['resources']}
    home_links=page.locator('#ww-practice-v2 a').evaluate_all('(els)=>els.filter(e=>!e.closest(".ww-practice-nav")).map(e=>e.getAttribute("href"))')
    for target in ['/practice/quickstarts/quickstart-determine-dislocated-worker-eligibility/','/practice/quickstarts/quickstart-review-new-training-provider/','/practice/etpl-coordinator/',
-                  '/practice-insight-employer-engagement/','/practice/foundations/wioa/','/practice/employer-commitments/','/national-practice-ideas/','/workforce-board-examples/']:
+                  '/practice-insight-employer-engagement/','/practice/quickstarts/quickstart-approve-training-request/','/practice/foundations/wioa/','/practice/employer-commitments/','/national-practice-ideas/','/workforce-board-examples/']:
     assert target in home_links,target
    for h in home_links:
     assert h.startswith(('/practice/','/trust/','/workforce-board-examples/','/national-practice-ideas/','/implementation-lessons/','/practice-insight-')),h

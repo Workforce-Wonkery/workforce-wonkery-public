@@ -111,15 +111,10 @@ home_style = '''<style>
 #ww-practice-v2 .sec-head{max-width:760px;margin-bottom:28px}
 #ww-practice-v2 .sec-head h2{margin-bottom:10px!important}
 #ww-practice-v2 .sec-head .deck{font:19px/1.5 Georgia,'Times New Roman',serif;color:#344454;margin:0}
-#ww-practice-v2 .pr-start{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;margin-top:48px!important;padding:40px 0 0}
+#ww-practice-v2 .pr-start{max-width:760px;margin-top:48px!important;padding:40px 0 0}
 #ww-practice-v2 .pr-start h2{font-size:clamp(30px,2.6vw,40px)!important}
 #ww-practice-v2 .pr-start .hint{font-size:15px;color:#4d5558;margin:14px 0 0}
-#ww-practice-v2 :is(.pr-tasks,.ideas-more) h3{font:600 12px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#986714!important;margin:6px 0 10px!important}
-#ww-practice-v2 .pr-tasks ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:32px}
-#ww-practice-v2 .pr-tasks li{border-top:1px solid #dedbd3;padding:13px 0 14px}
-#ww-practice-v2 .pr-tasks a{font:20px/1.3 Georgia,'Times New Roman',serif;color:#101c29;text-decoration:none}
-#ww-practice-v2 .pr-tasks a:hover,#ww-practice-v2 .pr-tasks a:focus-visible{color:#075f70;text-decoration:underline}
-#ww-practice-v2 .pr-tasks .via{display:block;font-size:14px;color:#4d5558;margin-top:4px}
+#ww-practice-v2 .ideas-more h3{font:600 12px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#986714!important;margin:6px 0 10px!important}
 #ww-practice-v2 .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 40px}
 #ww-practice-v2 .work-grid article{border-top:1px solid #dedbd3;padding-top:22px}
 #ww-practice-v2 .ww-practice-nav{display:none!important}
@@ -173,7 +168,6 @@ home_style = '''<style>
 #ww-practice-v2 .practice-hero-inner{height:auto;min-height:18.78vw;padding:22px 0}
 #ww-practice-v2 .practice-hero h1{font-size:clamp(44px,5.1vw,56px)!important}
 #ww-practice-v2 .practice-hero .deck{font-size:clamp(18px,2vw,20px)}
-#ww-practice-v2 .pr-start{grid-template-columns:1fr;gap:28px}
 #ww-practice-v2 .tracks{grid-template-columns:1fr;gap:0}
 #ww-practice-v2 .track{padding-bottom:16px}
 #ww-practice-v2 .work-grid,#ww-practice-v2 .stories{grid-template-columns:1fr 1fr}
@@ -190,12 +184,12 @@ home_style = '''<style>
 #ww-practice-v2 .practice-hero h1{font-size:44px!important;line-height:1.03!important;margin-bottom:12px!important}
 #ww-practice-v2 .practice-hero .deck{font-size:19px;max-width:none}
 #ww-practice-v2 .pr-start{margin-top:28px!important;padding-top:24px}
-#ww-practice-v2 .pr-tasks ul,#ww-practice-v2 .work-grid,#ww-practice-v2 .stories,#ww-practice-v2 .desks,#ww-practice-v2 .ideas-more{grid-template-columns:1fr}
+#ww-practice-v2 .work-grid,#ww-practice-v2 .stories,#ww-practice-v2 .desks,#ww-practice-v2 .ideas-more{grid-template-columns:1fr}
 #ww-practice-v2 .desk+.desk{border-left:0;border-top:1px solid #e3dccd}
 #ww-practice-v2 .desk{padding:26px 22px}
 #ww-practice-v2.practice-home>section,#ww-practice-v2.practice-home .pw>section{margin-top:48px}
 }
-@media(max-width:600px){#ww-practice-v2 .pw{width:calc(100% - 36px)}#ww-practice-v2 .pr-tasks a{font-size:19px}}
+@media(max-width:600px){#ww-practice-v2 .pw{width:calc(100% - 36px)}}
 </style>'''
 
 # Icon styles are scoped to the Practice page, before the responsive rules.
@@ -208,29 +202,16 @@ hero = ('<header class="practice-hero" aria-labelledby="wwp-practice-title"><div
         '<p class="deck">Answers for the question on your desk, ideas from other workforce systems, and the knowledge behind the work.</p>'
         '</div></div></header>')
 
-# "Help me solve something": the questions people most often bring, each one choice from the answer.
-QUESTIONS = [
-    (1558, 'Does this person qualify as a Dislocated Worker?'),
-    (1388, 'Should we approve this training request or ITA?'),
-    (7533, 'A new training provider wants to join the ETPL'),
-    (7861, 'Preparing for CalFresh and Medi-Cal work requirements'),
-    (1394, 'An employer needs help hiring or training workers'),
-    (1392, 'A monitoring finding just arrived'),
-    (1391, 'Our performance report shows a red number'),
-    (1395, 'This decision needs to go to the board'),
-]
 start = ('<section class="pr-start" id="start" aria-labelledby="pr-start-h"><div class="pr-start-search"><p class="eyebrow">Start here</p>'
          '<h2 id="pr-start-h">What are you working on?</h2>'
          '<form role="search" action="/practice/tools/" method="get"><label for="practice-home-q">Search Practice</label><div class="search-row">'
          '<input id="practice-home-q" type="search" name="q" placeholder="Try ITA, new ETPL provider, or CalFresh" autocomplete="off"><button>Search</button></div></form>'
          '<p class="hint">Searches all ' + str(N) + ' Quickstarts, tools, lessons and examples. Or <a href="/practice/quickstarts/">browse the ' + str(NQ)
          + ' Quickstarts</a>.</p></div>'
-         '<div class="pr-tasks"><h3>Common questions</h3><ul>'
-         + ''.join('<li><a href="' + href(R[i]) + '">' + E(q) + '</a><span class="via">' + E(label(R[i])) + ': ' + E(R[i]['title']) + '</span></li>' for i, q in QUESTIONS)
-         + '</ul></div></section>')
+         '</section>')
 
-# "Browse by the work you do": two or three direct links per area, distinct from the common questions above.
-WORK = {'participants': [1114, 1389, 1557], 'training': [7531, 7548, 7538], 'employers': [1561, 1574, 1465],
+# "Browse by the work you do": the area's starting reference plus core tasks, one click from the home page.
+WORK = {'participants': [1114, 1558, 1389], 'training': [7531, 1388, 7533], 'employers': [1561, 1574, 1465],
         'partners': [1468, 1115, 7594], 'oversight': [1569, 1566, 1122], 'performance': [1567, 1105, 1390]}
 work = ('<section id="topics" aria-labelledby="pr-work-h"><header class="sec-head"><p class="eyebrow">Browse by the work you do</p>'
         '<h2 id="pr-work-h">Six areas of workforce practice</h2><p class="deck">Each area brings together the Quickstarts, references, lessons and field examples for one part of the job.</p></header>'
