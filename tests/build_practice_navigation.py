@@ -61,6 +61,39 @@ def image(name, cls, width, height, eager=False):
             + ('fetchpriority="high"' if eager else 'loading="lazy"') + ' decoding="async">')
 
 
+# ---------------------------------------------------------------- Icons
+# The site's existing line icons (Data and homepage sprite) plus two drawn in the same style for partner
+# handoffs and board governance. Decorative: each sits beside a visible heading.
+ICON_PATHS = {
+    'people': '<circle cx="12" cy="7" r="3"/><path d="M6 22v-5a6 6 0 0 1 12 0v5M5 5a3 3 0 0 0 0 6m14-6a3 3 0 0 1 0 6M2 20v-4a4 4 0 0 1 3-4m17 8v-4a4 4 0 0 0-3-4"/>',
+    'cap': '<path d="m1 8 11-5 11 5-11 5Zm5 3v6c4 3 8 3 12 0v-6m5-3v9"/>',
+    'buildings': '<path d="M3 22V8h6v14m0 0V2h9v20m0-10h4v10M1 22h23M6 11v2m0 3v2m6-13v2m3-2v2m-3 3v2m3-2v2m-3 3v2m3-2v2"/>',
+    'handoff': '<path d="M4 8h14m-4-4 4 4-4 4M20 16H6m4-4-4 4 4 4"/>',
+    'board': '<path d="M2 9 12 3l10 6M4 10v8m5.3-8v8m5.4-8v8M20 10v8M2 21h20M3 18.5h18"/>',
+    'data': '<path d="M4 21v-7h3v7m4 0V7h3v14m4 0V2h3v19" fill="currentColor" stroke="none"/>',
+    'checklist': '<path d="M10 6h11M10 12h11M10 18h11M3 6l1.5 1.5L7 5m-4 7 1.5 1.5L7 11m-4 7 1.5 1.5L7 17"/>',
+    'policy': '<path d="M6 2h9l4 4v16H5V3a1 1 0 0 1 1-1Zm9 0v5h4M8 10h7M8 13h7M8 16h7M8 19h5"/>',
+    'bulb': '<path d="M8 18h8M9 21h6M10 23h4M8 16c0-3-3-4-3-8a7 7 0 0 1 14 0c0 4-3 5-3 8Z"/>',
+    'stars': '<path d="m12 3 2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2ZM21 1v6m-3-3h6M3 17v6m-3-3h6"/>',
+}
+TOPIC_ICON = {'participants': 'people', 'training': 'cap', 'employers': 'buildings', 'partners': 'handoff', 'oversight': 'board', 'performance': 'data'}
+
+
+def sprite(names):
+    return ('<svg class="pr-sprite" width="0" height="0" aria-hidden="true" focusable="false">'
+            + ''.join('<symbol id="pr-i-' + n + '" viewBox="0 0 24 24">' + ICON_PATHS[n] + '</symbol>' for n in names) + '</svg>')
+
+
+def icon(name, tone=''):
+    return ('<span class="pr-icon' + (' ' + tone if tone else '') + '" aria-hidden="true"><svg focusable="false"><use href="#pr-i-' + name + '"/></svg></span>')
+
+
+ICON_CSS = ('.pr-sprite{position:absolute;width:0;height:0;overflow:hidden}'
+            '.pr-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#e9f3f4;color:#075f70;margin:0 0 14px}'
+            '.pr-icon.gold{background:#f8f0df;color:#986714}'
+            '.pr-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}')
+
+
 # ---------------------------------------------------------------- Practice home
 home_style = '''<style>
 #ww-practice-v2.practice-home{padding:0 0 72px}
@@ -88,7 +121,12 @@ home_style = '''<style>
 #ww-practice-v2 .pr-tasks a:hover,#ww-practice-v2 .pr-tasks a:focus-visible{color:#075f70;text-decoration:underline}
 #ww-practice-v2 .pr-tasks .via{display:block;font-size:14px;color:#4d5558;margin-top:4px}
 #ww-practice-v2 .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 40px}
-#ww-practice-v2 .work-grid article{border-top:2px solid #101c29;padding-top:18px}
+#ww-practice-v2 .work-grid article{border-top:1px solid #dedbd3;padding-top:22px}
+#ww-practice-v2 .ww-practice-nav{display:none!important}
+#ww-practice-v2 .desk .pr-icon{margin-bottom:12px}
+#ww-practice-v2 .track{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:18px}
+#ww-practice-v2 .track .pr-icon{grid-row:1/span 4;margin:2px 0 0}
+#ww-practice-v2 .track>.more{grid-column:2}
 #ww-practice-v2 .work-grid h3 a{color:#101c29;text-decoration:none}
 #ww-practice-v2 .work-grid h3 a:hover,#ww-practice-v2 .work-grid h3 a:focus-visible{color:#075f70;text-decoration:underline}
 #ww-practice-v2 .work-grid>article>p{color:#344454;margin:0 0 12px}
@@ -161,6 +199,9 @@ home_style = '''<style>
 @media(max-width:600px){#ww-practice-v2 .pw{width:calc(100% - 36px)}#ww-practice-v2 .pr-tasks a{font-size:19px}}
 </style>'''
 
+# Icon styles are scoped to the Practice page, before the responsive rules.
+home_style = home_style.replace('@media(max-width:1000px){', ''.join('#ww-practice-v2 ' + r + '\n' for r in ICON_CSS.replace('}', '}\n').strip().split('\n')) + '@media(max-width:1000px){', 1)
+
 hero = ('<header class="practice-hero" aria-labelledby="wwp-practice-title"><div class="practice-hero-photo" aria-hidden="true">'
         + image('golden_hour_office_collaboration_with_la_skyline.png', 'practice-hero-image', 2172, 724, True)
         + '</div><div class="pw practice-hero-inner"><div class="practice-hero-copy"><p class="eyebrow">From practice to progress</p>'
@@ -195,27 +236,27 @@ WORK = {'participants': [1114, 1389, 1557], 'training': [7531, 7548, 7538], 'emp
 work = ('<section id="topics" aria-labelledby="pr-work-h"><header class="sec-head"><p class="eyebrow">Browse by the work you do</p>'
         '<h2 id="pr-work-h">Six areas of workforce practice</h2><p class="deck">Each area brings together the Quickstarts, references, lessons and field examples for one part of the job.</p></header>'
         '<div class="work-grid">'
-        + ''.join('<article><h3><a href="/practice/topics/?topic=' + t['id'] + '">' + E(t['title']) + '</a></h3><p>' + E(t['summary']) + '</p><ul class="links">'
-                  + ''.join(item(i, False) for i in WORK[t['id']]) + '</ul><p class="more"><a href="/practice/topics/?topic=' + t['id'] + '">All '
-                  + str(count(t['id'])) + ' ' + E(t['title']) + ' resources<span aria-hidden="true"> →</span></a></p></article>' for t in data['topics'])
+        + ''.join('<article>' + icon(TOPIC_ICON[t['id']], 'gold' if k % 2 else '') + '<h3><a href="/practice/topics/?topic=' + t['id'] + '">' + E(t['title']) + '</a></h3><p>' + E(t['summary']) + '</p><ul class="links">'
+                  + ''.join(item(i, False, False) for i in WORK[t['id']]) + '</ul><p class="more"><a href="/practice/topics/?topic=' + t['id'] + '">All '
+                  + str(count(t['id'])) + ' ' + E(t['title']) + ' resources<span aria-hidden="true"> →</span></a></p></article>' for k, t in enumerate(data['topics']))
         + '</div></section>')
 
-DESKS = [(7531, [7550, 7544, 7543]), (7861, [7839, 7802, 7801])]
+DESKS = [(7531, [7550, 7544, 7543], 'checklist', ''), (7861, [7839, 7802, 7801], 'policy', 'gold')]
 desks = ('<section id="desks" aria-labelledby="pr-desks-h"><header class="sec-head"><p class="eyebrow">Desks for specialized work</p>'
          '<h2 id="pr-desks-h">Focused help for complex responsibilities</h2><p class="deck">A desk gathers onboarding, everyday tasks, current guidance and source checks for one responsibility, so you do not have to assemble them yourself.</p></header>'
          '<div class="desks">'
-         + ''.join('<article class="desk"><p class="tag">' + E(label(R[d])) + '</p><h3><a href="' + href(R[d]) + '">' + E(R[d]['title']) + '</a></h3><p>' + E(R[d]['summary'])
-                   + '</p><ul class="links">' + ''.join(item(i, False) for i in subs) + '</ul></article>' for d, subs in DESKS)
+         + ''.join('<article class="desk">' + icon(ic, tone) + '<h3><a href="' + href(R[d]) + '">' + E(R[d]['title']) + '</a></h3><p>' + E(R[d]['summary'])
+                   + '</p><ul class="links">' + ''.join(item(i, False, False) for i in subs) + '</ul></article>' for d, subs, ic, tone in DESKS)
          + '</div></section>')
 
 learn = ('<section id="learn" aria-labelledby="pr-learn-h"><header class="sec-head"><p class="eyebrow">Learn and grow</p>'
          '<h2 id="pr-learn-h">Learn the system. Strengthen your practice.</h2><p class="deck">Start with the foundations, go deeper when you are ready, and test your judgment on realistic cases.</p></header>'
          '<div class="learn">' + image('practice-feature-case-upscaled.png', 'learn-image', 870, 714) + '<div class="tracks">'
-         '<div class="track"><p class="step">New to workforce development</p><h3><a href="' + href(R[1210]) + '">Foundations Course</a></h3><p>' + E(R[1210]['summary'])
+         '<div class="track">' + icon('bulb') + '<p class="step">New to workforce development</p><h3><a href="' + href(R[1210]) + '">Foundations Course</a></h3><p>' + E(R[1210]['summary'])
          + '</p><ul class="inline">' + ''.join('<li><a href="' + href(R[i]) + '">' + E(R[i]['title']) + '</a></li>' for i in [937, 936, 943]) + '</ul></div>'
-         '<div class="track"><p class="step">Ready to go deeper</p><h3><a href="' + href(R[1427]) + '">Workforce in Practice</a></h3><p>' + E(R[1427]['summary'])
+         '<div class="track">' + icon('cap', 'gold') + '<p class="step">Ready to go deeper</p><h3><a href="' + href(R[1427]) + '">Workforce in Practice</a></h3><p>' + E(R[1427]['summary'])
          + '</p><ul class="inline">' + ''.join('<li><a href="' + href(R[i]) + '">' + E(re.sub(r'^Workforce in Practice \d+: ', '', R[i]['title'])) + '</a></li>' for i in [1429, 1431, 1434]) + '</ul></div>'
-         '<div class="track"><p class="step">Practice your judgment</p><ul class="links">' + ''.join(item(i) for i in [1193, 7547, 2645]) + '</ul></div>'
+         '<div class="track">' + icon('stars') + '<p class="step">Practice your judgment</p><ul class="links">' + ''.join(item(i, False, False) for i in [1193, 7547, 2645]) + '</ul></div>'
          '<p class="more"><a href="/practice/tools/?type=Course">All ' + str(sum(r['type'] == 'Course' for r in data['resources'])) + ' lessons and courses<span aria-hidden="true"> →</span></a></p>'
          '</div></div></section>')
 
@@ -233,7 +274,7 @@ ideas = ('<section id="ideas" aria-labelledby="pr-ideas-h"><header class="sec-he
 trust = ('<div class="trust"><p>Each resource shows its review date, sources and evidence limits. Official sources and your local policy control. <a href="/trust/">Our trust standards</a></p>'
          '<p><a href="/practice/tools/">Browse all ' + str(N) + ' resources<span aria-hidden="true"> →</span></a></p></div>')
 
-home = home_style + hero + '<div class="pw">' + start + work + desks + learn + ideas + trust + '</div>'
+home = home_style + sprite(['people', 'cap', 'buildings', 'handoff', 'board', 'data', 'checklist', 'policy', 'bulb', 'stars']) + hero + '<div class="pw">' + start + work + desks + learn + ideas + trust + '</div>'
 (S / 'templates/practice-editorial-v2.html').write_text(wrap(home, 'practice-home'))
 
 
@@ -254,10 +295,10 @@ type_legend = ('<details class="type-legend"><summary>What the resource types me
 
 def topic_overview():
     return ('<section class="topic-overview" data-topic-overview aria-label="Topics"><div class="topic-grid">'
-            + ''.join('<article><h2><a href="?topic=' + t['id'] + '">' + E(t['title']) + '</a></h2><p>' + E(t['summary']) + '</p>'
+            + ''.join('<article>' + icon(TOPIC_ICON[t['id']], 'gold' if k % 2 else '') + '<h2><a href="?topic=' + t['id'] + '">' + E(t['title']) + '</a></h2><p>' + E(t['summary']) + '</p>'
                       '<p class="start">Start with <a href="' + href(R[t['start']]) + '">' + E(R[t['start']]['title']) + '</a></p>'
                       '<p class="more"><a href="?topic=' + t['id'] + '">Open the topic guide · ' + str(count(t['id'])) + ' resources<span aria-hidden="true"> →</span></a></p></article>'
-                      for t in data['topics']) + '</div></section>')
+                      for k, t in enumerate(data['topics'])) + '</div></section>')
 
 
 HUBS = [
@@ -272,7 +313,7 @@ for filename, crumb, title, intro, default, kind in HUBS:
     head = ('<header class="hub-head"><h1 id="practice-hub-title" data-hub-title>' + E(title) + '</h1><p class="intro" data-hub-intro>' + E(intro) + '</p></header>')
     extra = ''
     if kind == 'topics':
-        extra = topic_overview() + '<div data-topic-guides></div>'
+        extra = '<style>' + ' '.join('#ww-practice-v2 ' + r for r in ICON_CSS.replace('}', '}\n').strip().split('\n')) + '</style>' + sprite(list(TOPIC_ICON.values())) + topic_overview() + '<div data-topic-guides></div>'
     results_head = ('<h2 class="results-title" data-results-title>' + ('Search all topics' if kind == 'topics' else 'Resources') + '</h2>')
     body = (head + extra + '<section class="hub-results" data-results-section aria-labelledby="practice-results-title">'
             + results_head.replace('<h2 class', '<h2 id="practice-results-title" class') + directory_form()
