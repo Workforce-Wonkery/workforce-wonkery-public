@@ -126,7 +126,6 @@ home_style = '''<style>
 #ww-practice-v2 .desk .pr-icon{margin-bottom:12px}
 #ww-practice-v2 .track{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:18px}
 #ww-practice-v2 .track .pr-icon{grid-row:1/span 4;margin:2px 0 0}
-#ww-practice-v2 .track>.more{grid-column:2}
 #ww-practice-v2 .work-grid h3 a{color:#101c29;text-decoration:none}
 #ww-practice-v2 .work-grid h3 a:hover,#ww-practice-v2 .work-grid h3 a:focus-visible{color:#075f70;text-decoration:underline}
 #ww-practice-v2 .work-grid>article>p{color:#344454;margin:0 0 12px}
@@ -142,10 +141,9 @@ home_style = '''<style>
 #ww-practice-v2 .desk h3 a:hover,#ww-practice-v2 .desk h3 a:focus-visible{color:#075f70;text-decoration:underline}
 #ww-practice-v2 .desk>p{color:#344454;margin:0 0 16px}
 #ww-practice-v2 .desk .links li{border-color:#e0d8c7}
-#ww-practice-v2 .learn{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:48px;align-items:start}
-#ww-practice-v2 .learn-image{display:block;width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;object-position:center 75%}
-#ww-practice-v2 .track{border-top:1px solid #dedbd3;padding:20px 0 6px}
-#ww-practice-v2 .track:first-child{border-top:0;padding-top:0}
+#ww-practice-v2 .tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+#ww-practice-v2 .track{border-top:1px solid #dedbd3;padding:22px 0 0}
+#ww-practice-v2 .tracks>.more{grid-column:1/-1}
 #ww-practice-v2 .track .step{font:600 12px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#986714;margin:0 0 6px}
 #ww-practice-v2 .track h3 a{color:#101c29}
 #ww-practice-v2 .track p{color:#344454;margin:0 0 10px}
@@ -175,8 +173,9 @@ home_style = '''<style>
 #ww-practice-v2 .practice-hero-inner{height:auto;min-height:18.78vw;padding:22px 0}
 #ww-practice-v2 .practice-hero h1{font-size:clamp(44px,5.1vw,56px)!important}
 #ww-practice-v2 .practice-hero .deck{font-size:clamp(18px,2vw,20px)}
-#ww-practice-v2 .pr-start,#ww-practice-v2 .learn{grid-template-columns:1fr;gap:28px}
-#ww-practice-v2 .learn-image{aspect-ratio:16/7}
+#ww-practice-v2 .pr-start{grid-template-columns:1fr;gap:28px}
+#ww-practice-v2 .tracks{grid-template-columns:1fr;gap:0}
+#ww-practice-v2 .track{padding-bottom:16px}
 #ww-practice-v2 .work-grid,#ww-practice-v2 .stories{grid-template-columns:1fr 1fr}
 #ww-practice-v2 .ideas-lead{grid-template-columns:1fr;gap:24px}
 #ww-practice-v2 .ideas-image{min-height:0;aspect-ratio:16/7;height:auto}
@@ -251,7 +250,7 @@ desks = ('<section id="desks" aria-labelledby="pr-desks-h"><header class="sec-he
 
 learn = ('<section id="learn" aria-labelledby="pr-learn-h"><header class="sec-head"><p class="eyebrow">Learn and grow</p>'
          '<h2 id="pr-learn-h">Learn the system. Strengthen your practice.</h2><p class="deck">Start with the foundations, go deeper when you are ready, and test your judgment on realistic cases.</p></header>'
-         '<div class="learn">' + image('practice-feature-case-upscaled.png', 'learn-image', 870, 714) + '<div class="tracks">'
+         '<div class="learn"><div class="tracks">'
          '<div class="track">' + icon('bulb') + '<p class="step">New to workforce development</p><h3><a href="' + href(R[1210]) + '">Foundations Course</a></h3><p>' + E(R[1210]['summary'])
          + '</p><ul class="inline">' + ''.join('<li><a href="' + href(R[i]) + '">' + E(R[i]['title']) + '</a></li>' for i in [937, 936, 943]) + '</ul></div>'
          '<div class="track">' + icon('cap', 'gold') + '<p class="step">Ready to go deeper</p><h3><a href="' + href(R[1427]) + '">Workforce in Practice</a></h3><p>' + E(R[1427]['summary'])
