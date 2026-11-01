@@ -1,6 +1,8 @@
+// Retire the earlier header copy of this runtime, if a cached or unpublished header still carries it.
+(function(){const old=document.getElementById('ww-practice-catalogue');if(old)old.remove();})();
 document.addEventListener('DOMContentLoaded', function () {
  'use strict';
- const dataNode=document.getElementById('ww-practice-catalogue');if(!dataNode)return;
+ const dataNode=document.getElementById('ww-practice-data');if(!dataNode)return;
  const data=JSON.parse(dataNode.textContent);
  const safe=u=>{try{const x=new URL(u);return x.protocol==='https:'&&x.hostname==='workforcewonkery.com';}catch(e){return false;}};
  data.resources=data.resources.filter(r=>safe(r.url));
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   return[topicCrumb(topicOf(r.topics[0]))];
  }
  // One navigation row: breadcrumb on the left, the Practice sections on the right.
- const hub=document.querySelector('[data-practice-directory]');
+ const hubNode=document.querySelector('[data-practice-directory]'),hub=hubNode&&hubNode.querySelector('[data-results]')?hubNode:null;
  const nav=make('nav',{class:'ww-practice-nav','aria-label':'Practice'});
  let trail=null;
  if(current&&!hub){trail=[['Practice','/practice/'],...parents(current),[current.title]];}
@@ -70,6 +72,18 @@ document.addEventListener('DOMContentLoaded', function () {
  if(hub){
   const form=hub.querySelector('form'),q=form.elements.q,topic=form.elements.topic,type=form.elements.type;
   const kind=hub.dataset.page,list=hub.querySelector('[data-results]');
+  // The list and topic guides are rendered from the one shared catalogue.
+  data.resources.forEach(r=>list.append(make('article',{class:'resource','data-resource-id':String(r.id)},
+   make('p',{class:'meta'},make('span',{class:'tag'},typeLabel(r.type)),' '+(r.topics.length<ALL?r.topics.map(t=>topicOf(t).title).join(' · '):'All topics')),
+   make('h3',{},link(r.title,r.url)),make('p',{},r.summary))));
+  const guides=hub.querySelector('[data-topic-guides]');
+  if(guides)data.topics.forEach(t=>{const st=byId.get(t.start);if(!st)return;
+   const ulOf=(ids,cls)=>{const ul=make('ul',{class:'links'+(cls?' '+cls:'')});ids.map(i=>byId.get(i)).filter(Boolean).forEach(r=>ul.append(make('li',{},make('span',{class:'tag'},typeLabel(r.type)),link(r.title,new URL(r.url).pathname),make('span',{class:'sum'},r.summary))));return ul;};
+   const col=(title,note,ids)=>ids.length?make('div',{},make('h3',{},title),make('p',{class:'note'},note),ulOf(ids)):null;
+   guides.append(make('section',{class:'topic-guide','data-topic-guide':t.id,'aria-label':t.title+' guide',hidden:''},
+    make('div',{class:'tg-start'},make('p',{class:'tag'},'Start here · '+typeLabel(st.type)),make('h2',{},link(st.title,new URL(st.url).pathname)),make('p',{},st.summary)),
+    make('div',{class:'tg-cols'},col('Get a task done','Step-by-step help with a specific decision.',t.tasks.filter(i=>i!==t.start)),col('Keep at hand','References and tools to keep open while you work.',t.keep),col('Build your knowledge','Lessons that explain the system behind the task.',t.learn)),
+    make('div',{class:'tg-ideas'},make('h3',{},'Ideas worth borrowing'),ulOf(t.ideas,'cols'))));});
   const items=Array.from(hub.querySelectorAll('[data-resource-id]'));const original=items.slice();
   const title=hub.querySelector('[data-hub-title]'),intro=hub.querySelector('[data-hub-intro]');
   const baseTitle=title&&title.textContent,baseIntro=intro&&intro.textContent,baseDoc=document.title;
