@@ -27,9 +27,9 @@
       "name": "Data",
       "url": "https://workforcewonkery.com/data/",
       "required_markers": [
-        "Data decoded",
-        "California is hiring, cutting, and changing at the same time.",
-        "Health care is doing much of the pulling."
+        "data-monthly-refresh=\"california-labor-market\"",
+        "id=\"wd-story-title\"",
+        "data-monthly-brief"
       ]
     },
     {
